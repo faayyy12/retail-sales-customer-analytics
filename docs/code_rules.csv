@@ -1,0 +1,44 @@
+stock_code,item_category,evidence
+POST,postage,POSTAGE
+DOT,postage,DOTCOM POSTAGE
+C2,postage,CARRIAGE
+AMAZONFEE,fee,AMAZON FEE
+BANK CHARGES,fee,Bank Charges
+CRUK,fee,CRUK Commission
+D,discount,Discount
+B,bad_debt_adjustment,Adjust bad debt
+M,manual_adjustment,Manual; includes raw M and m after normalization
+ADJUST,manual_adjustment,Named adjustment descriptions
+ADJUST2,manual_adjustment,Named adjustment descriptions
+S,sample,SAMPLES
+TEST001,test,This is a test product.
+TEST002,test,This is a test product.
+GIFT,unresolved_special,Missing description and zero price
+C3,unresolved_special,Missing description and zero price
+PADS,unresolved_special,PADS TO MATCH ALL CUSHIONS; nominal subpenny entries need explanation
+GIFT_0001_10,voucher,Dotcomgiftshop Gift Voucher GBP10
+GIFT_0001_20,voucher,Dotcomgiftshop Gift Voucher GBP20
+GIFT_0001_30,voucher,Dotcomgiftshop Gift Voucher GBP30
+GIFT_0001_40,voucher,Dotcomgiftshop Gift Voucher GBP40
+GIFT_0001_50,voucher,Dotcomgiftshop Gift Voucher GBP50
+GIFT_0001_60,voucher,Voucher code family; missing description and zero prices
+GIFT_0001_70,voucher,Dotcomgiftshop Gift Voucher GBP70
+GIFT_0001_80,voucher,Voucher code family; missing description and zero prices
+GIFT_0001_90,voucher,Voucher code family; missing description and zero prices
+DCGS0003,merchandise,BOXED GLASS ASHTRAY; adjustment-like row descriptions still flagged
+DCGS0004,merchandise,HAYNES CAMPER SHOULDER BAG
+DCGS0037,merchandise,KEY-RING CORKSCREW
+DCGS0041,merchandise,HAYNES MINI-COOPER PLAYING CARDS
+DCGS0044,merchandise,HANDZ-OFF CAR FRESHENER
+DCGS0058,merchandise,MISO PRETTY GUM
+DCGS0062,merchandise,ROAD-RAGE CAR FRESHENER
+DCGS0066N,merchandise,NAVY CUDDLES DOG HOODIE
+DCGS0068,merchandise,DOGS NIGHT COLLAR
+DCGS0069,merchandise,OOH LA LA DOGS COLLAR
+DCGS0070,merchandise,CAMOUFLAGE DOG COLLAR
+DCGS0072,merchandise,CAT CAMOUFLAGUE COLLAR
+DCGS0075,merchandise,CAMOUFLAGUE DOG LEAD
+DCGS0076,merchandise,SUNJAR LED NIGHT NIGHT LIGHT
+DCGSSBOY,merchandise,BOYS PARTY BAG
+DCGSSGIRL,merchandise,GIRLS PARTY BAG
+SP1002,merchandise,KID'S CHALKBOARD/EASEL

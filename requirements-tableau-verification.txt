@@ -1,0 +1,4 @@
+# Optional: inspect local packaged Hyper extracts; not needed for CSV checks.
+tableauhyperapi==0.0.26516
+cffi==2.1.1
+pycparser==3.11

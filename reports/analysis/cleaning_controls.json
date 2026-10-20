@@ -1,0 +1,141 @@
+{
+  "source_sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+  "code_rules_sha256": "e963a7f9ecc50db1c6e2e79e815e68ce9096023723ed1b1a8bcdd5f17ed245aa",
+  "stages": {
+    "raw": {
+      "rows": 1067371,
+      "invoices": 53628,
+      "identified_customers": 5942,
+      "missing_customer_id_rows": 243007,
+      "signed_amount_gbp": "19287250.568",
+      "gross_merchandise_amount": null,
+      "recorded_merchandise_credit_amount": null,
+      "identified_gross_merchandise_amount": null
+    },
+    "canonical_all_classified_rows": {
+      "rows": 1044848,
+      "invoices": 53628,
+      "identified_customers": 5942,
+      "missing_customer_id_rows": 235287,
+      "signed_amount_gbp": "18909762.118",
+      "gross_merchandise_amount": "19700954.44",
+      "recorded_merchandise_credit_amount": "719656.34",
+      "identified_gross_merchandise_amount": "17124940.98"
+    },
+    "qualifying_purchase": {
+      "rows": 1015071,
+      "invoices": 39516,
+      "identified_customers": 5852,
+      "missing_customer_id_rows": 226882,
+      "signed_amount_gbp": "19700954.44",
+      "gross_merchandise_amount": "19700954.44",
+      "recorded_merchandise_credit_amount": "0",
+      "identified_gross_merchandise_amount": "17124940.98"
+    },
+    "main_history_all_classified_rows": {
+      "rows": 1019322,
+      "invoices": 52613,
+      "identified_customers": 5914,
+      "missing_customer_id_rows": 227423,
+      "signed_amount_gbp": "18476076.108",
+      "gross_merchandise_amount": "19085461.17",
+      "recorded_merchandise_credit_amount": "545529.58",
+      "identified_gross_merchandise_amount": "16611710.55"
+    },
+    "main_history_qualifying_purchase": {
+      "rows": 990040,
+      "invoices": 38700,
+      "identified_customers": 5824,
+      "missing_customer_id_rows": 219093,
+      "signed_amount_gbp": "19085461.17",
+      "gross_merchandise_amount": "19085461.17",
+      "recorded_merchandise_credit_amount": "0",
+      "identified_gross_merchandise_amount": "16611710.55"
+    },
+    "non_merchandise_or_unresolved": {
+      "rows": 5775,
+      "invoices": 5432,
+      "identified_customers": 1128,
+      "missing_customer_id_rows": 2114,
+      "signed_amount_gbp": "87140.158",
+      "gross_merchandise_amount": "0",
+      "recorded_merchandise_credit_amount": "0",
+      "identified_gross_merchandise_amount": "0"
+    },
+    "recorded_merchandise_credit": {
+      "rows": 17973,
+      "invoices": 7405,
+      "identified_customers": 2444,
+      "missing_customer_id_rows": 332,
+      "signed_amount_gbp": "-719656.34",
+      "gross_merchandise_amount": "0",
+      "recorded_merchandise_credit_amount": "719656.34",
+      "identified_gross_merchandise_amount": "0"
+    },
+    "zero_value": {
+      "rows": 6024,
+      "invoices": 5379,
+      "identified_customers": 51,
+      "missing_customer_id_rows": 5954,
+      "signed_amount_gbp": "0.0",
+      "gross_merchandise_amount": "0",
+      "recorded_merchandise_credit_amount": "0",
+      "identified_gross_merchandise_amount": "0"
+    },
+    "main_history_anonymous_purchase": {
+      "rows": 219093,
+      "invoices": 2882,
+      "identified_customers": 0,
+      "missing_customer_id_rows": 219093,
+      "signed_amount_gbp": "2473750.62",
+      "gross_merchandise_amount": "2473750.62",
+      "recorded_merchandise_credit_amount": "0",
+      "identified_gross_merchandise_amount": "0"
+    },
+    "negative_price_adjustment": {
+      "rows": 5,
+      "invoices": 5,
+      "identified_customers": 0,
+      "missing_customer_id_rows": 5,
+      "signed_amount_gbp": "-158676.14",
+      "gross_merchandise_amount": "0",
+      "recorded_merchandise_credit_amount": "0",
+      "identified_gross_merchandise_amount": "0"
+    },
+    "excluded_overlap": {
+      "rows": 22523,
+      "invoices": 1088,
+      "identified_customers": 622,
+      "missing_customer_id_rows": 7720,
+      "signed_amount_gbp": "377488.45",
+      "gross_merchandise_amount": null,
+      "recorded_merchandise_credit_amount": null,
+      "identified_gross_merchandise_amount": null
+    }
+  },
+  "stock_code_normalization_changed_rows": 3346,
+  "description_trimming_changed_rows": 208682,
+  "qualifying_invoice_count_all_available_dates": 39516,
+  "qualifying_invoices_multiple_timestamps_same_day": 82,
+  "qualifying_invoice_conflicts": 0,
+  "within_sheet_repeat_sensitivity": {
+    "assumption": "Hypothetical removal of exact repeat excess after overlap; NOT applied.",
+    "rows": 11812,
+    "invoices": 4387,
+    "identified_customers": 1594,
+    "missing_customer_id_rows": 136,
+    "signed_amount_gbp": "54228.42",
+    "gross_merchandise_amount": "57092.82",
+    "recorded_merchandise_credit_amount": "3230.37",
+    "identified_gross_merchandise_amount": "56358.26"
+  },
+  "main_history_customer_id_gross_sales_coverage": "0.8703855988615862196637714257",
+  "verification": {
+    "raw_file_checksums": true,
+    "canonical_and_exclusion_counts_and_amounts": true,
+    "all_categories_preserve_rows_and_amounts": true,
+    "qualifying_invoice_keys_and_date_customer_country_consistency": true,
+    "invoice_gross_matches_lines_exactly": true,
+    "repeated_lines_retained": true
+  }
+}

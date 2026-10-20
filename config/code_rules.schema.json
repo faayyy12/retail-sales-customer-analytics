@@ -1,0 +1,5 @@
+[
+  {"name": "stock_code", "type": "STRING", "mode": "REQUIRED"},
+  {"name": "item_category", "type": "STRING", "mode": "REQUIRED"},
+  {"name": "evidence", "type": "STRING", "mode": "REQUIRED"}
+]

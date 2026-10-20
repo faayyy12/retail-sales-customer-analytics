@@ -1,0 +1,121 @@
+{
+  "status": "passed",
+  "input_hashes": 48,
+  "export_comparisons": [
+    {
+      "analysis": "cleaning",
+      "status": "passed",
+      "expected": "reports/cleaning_category_controls.csv",
+      "observed": "reports/bigquery_cleaning_category_controls.csv",
+      "field_comparisons": 504,
+      "null_field_comparisons": 0
+    },
+    {
+      "analysis": "monthly_sales",
+      "status": "passed",
+      "expected": "reports/monthly_sales_expected.csv",
+      "observed": "reports\\bigquery_monthly_sales_baseline.csv",
+      "field_comparisons": 220,
+      "null_field_comparisons": 0
+    },
+    {
+      "analysis": "identified_sales",
+      "status": "passed",
+      "expected": "reports/identified_sales_expected.csv",
+      "observed": "reports/bigquery_identified_sales_breakdown.csv",
+      "field_comparisons": 20,
+      "null_field_comparisons": 0
+    },
+    {
+      "analysis": "recorded_credits",
+      "status": "passed",
+      "expected": "reports/recorded_credit_expected.csv",
+      "observed": "reports/bigquery_recorded_credit_analysis.csv",
+      "field_comparisons": 312,
+      "null_field_comparisons": 0
+    },
+    {
+      "analysis": "customer_histories",
+      "status": "passed",
+      "expected": "reports/first_observed_purchases_expected.csv",
+      "observed": "reports/bigquery_first_observed_purchases.csv",
+      "field_comparisons": 34944,
+      "null_field_comparisons": 4009
+    },
+    {
+      "analysis": "cohorts",
+      "status": "passed",
+      "expected": "reports/cohort_purchase_timing_expected.csv",
+      "observed": "reports/bigquery_cohort_purchase_timing.csv",
+      "field_comparisons": 288,
+      "null_field_comparisons": 8
+    },
+    {
+      "analysis": "snapshot",
+      "status": "passed",
+      "expected": "reports/customer_snapshot_expected.csv",
+      "observed": "reports/bigquery_customer_snapshot.csv",
+      "field_comparisons": 67912,
+      "null_field_comparisons": 0
+    },
+    {
+      "analysis": "segments",
+      "status": "passed",
+      "expected": "reports/customer_segments_expected.csv",
+      "observed": "reports/11_customer_segments.csv",
+      "field_comparisons": 315,
+      "null_field_comparisons": 0
+    }
+  ],
+  "presentation": {
+    "sales_period_rows": 2,
+    "base_segment_rows": 5,
+    "sensitivity_rows": 30,
+    "cohort_rows": 24,
+    "status": "passed"
+  },
+  "source_reconstruction": [
+    {
+      "expected": "reports/monthly_sales_expected.csv",
+      "rows": 22,
+      "cells_including_keys": 242,
+      "status": "passed"
+    },
+    {
+      "expected": "reports/identified_sales_expected.csv",
+      "rows": 2,
+      "cells_including_keys": 22,
+      "status": "passed"
+    },
+    {
+      "expected": "reports/recorded_credit_expected.csv",
+      "rows": 66,
+      "cells_including_keys": 594,
+      "status": "passed"
+    },
+    {
+      "expected": "reports/first_observed_purchases_expected.csv",
+      "rows": 5824,
+      "cells_including_keys": 40768,
+      "status": "passed"
+    },
+    {
+      "expected": "reports/cohort_purchase_timing_expected.csv",
+      "rows": 24,
+      "cells_including_keys": 312,
+      "status": "passed"
+    },
+    {
+      "expected": "reports/customer_snapshot_expected.csv",
+      "rows": 5224,
+      "cells_including_keys": 73136,
+      "status": "passed"
+    },
+    {
+      "expected": "reports/customer_segments_expected.csv",
+      "rows": 35,
+      "cells_including_keys": 385,
+      "status": "passed"
+    }
+  ]
+}

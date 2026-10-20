@@ -1,0 +1,104 @@
+{
+  "profiled_at": "2026-10-16T09:11:01.084066+08:00",
+  "scope": "Historical feature columns only, through 2011-08-31. No subsequent-purchase field used in distributions or counts. Outcomes were inspected earlier in the project; this is not an untouched holdout. Rules not yet evaluated.",
+  "snapshot_path": "reports/customer_snapshot_expected.csv",
+  "snapshot_sha256": "dbcb1d1846a7eeb18e63a8f645362caef89b216007985051448bee4abc2b11f6",
+  "comparison_path": "reports/customer_snapshot_comparison.json",
+  "comparison_sha256": "6c93174dc9db55f70ac19cbec813b38a324089cb1c5ae0de16a9c50531eaea49",
+  "feature_columns_used": [
+    "recency_days",
+    "purchase_invoice_count",
+    "purchase_day_count",
+    "gross_merchandise_purchase_amount_gbp",
+    "observed_tenure_days"
+  ],
+  "quantile_method": "Exact linear interpolation at (n-1)*p, Decimal; no outcomes used",
+  "distributions": {
+    "recency_days": {
+      "n": 5224,
+      "min": "0",
+      "p10": "15.0",
+      "p25": "49.00",
+      "p50": "160.0",
+      "p75": "317.00",
+      "p90": "464.0",
+      "p95": "537.85",
+      "max": "638"
+    },
+    "purchase_invoice_count": {
+      "n": 5224,
+      "min": "1",
+      "p10": "1.0",
+      "p25": "1.00",
+      "p50": "3.0",
+      "p75": "6.00",
+      "p90": "12.0",
+      "p95": "18.85",
+      "max": "278"
+    },
+    "purchase_day_count": {
+      "n": 5224,
+      "min": "1",
+      "p10": "1.0",
+      "p25": "1.00",
+      "p50": "3.0",
+      "p75": "6.00",
+      "p90": "11.0",
+      "p95": "16.00",
+      "max": "195"
+    },
+    "gross_merchandise_purchase_amount_gbp": {
+      "n": 5224,
+      "min": "1.55",
+      "p10": "157.434",
+      "p25": "316.9575",
+      "p50": "779.085",
+      "p75": "2050.0350",
+      "p90": "4888.228",
+      "p95": "8299.8950",
+      "max": "451866.97"
+    },
+    "observed_tenure_days": {
+      "n": 5224,
+      "min": "0",
+      "p10": "149.0",
+      "p25": "303.00",
+      "p50": "465.0",
+      "p75": "577.00",
+      "p90": "631.0",
+      "p95": "636.00",
+      "max": "638"
+    }
+  },
+  "historical_counts": {
+    "tenure_le_60": 205,
+    "tenure_le_90": 312,
+    "tenure_le_120": 426,
+    "recency_le_90": 1930,
+    "single_purchase_day": 1649
+  },
+  "established_recent_distributions_tenure_gt90_recency_le90": {
+    "purchase_day_count": {
+      "n": 1618,
+      "min": "2",
+      "p10": "3.0",
+      "p25": "4.00",
+      "p50": "7.0",
+      "p75": "12.00",
+      "p90": "21.0",
+      "p95": "29.00",
+      "max": "195"
+    },
+    "gross_merchandise_purchase_amount_gbp": {
+      "n": 1618,
+      "min": "53.10",
+      "p10": "601.208",
+      "p25": "1107.0025",
+      "p50": "2434.380",
+      "p75": "5253.3425",
+      "p90": "10139.017",
+      "p95": "16256.1700",
+      "max": "451866.97"
+    }
+  }
+}

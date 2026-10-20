@@ -1,0 +1,7 @@
+{
+  "project_id": "YOUR_PROJECT_ID",
+  "dataset_id": "YOUR_DEDICATED_DATASET_ID",
+  "location": "YOUR_DATASET_LOCATION",
+  "account_mode": "UNCONFIRMED",
+  "maximum_bytes_billed": 1073741824
+}

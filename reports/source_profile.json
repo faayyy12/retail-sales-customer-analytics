@@ -1,0 +1,862 @@
+{
+  "generated_at": "2026-10-14T10:22:04.490497+08:00",
+  "runtime": {
+    "python": "3.12.6",
+    "pandas": "3.0.6",
+    "openpyxl": "3.1.5"
+  },
+  "source_sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+  "method": "Every nonblank source row; identifiers as strings, Excel rows starting at 2, Decimal(str(original numeric price)), no removal or business classifications. XML controls interpret numeric price tokens as Excel binary numeric values before decimal conversion; literal-token differences are reported separately. No monetary rounding is applied.",
+  "amount_warning": "Unclassified source controls include adjustments, anonymous records and overlapping extracts. These are not merchandise sales metrics.",
+  "sheets": [
+    {
+      "sheet": "Year 2009-2010",
+      "headers": [
+        "Invoice",
+        "StockCode",
+        "Description",
+        "Quantity",
+        "InvoiceDate",
+        "Price",
+        "Customer ID",
+        "Country"
+      ],
+      "worksheet_max_row_including_header": 525462,
+      "worksheet_max_column": 8,
+      "blank_rows": [],
+      "original_python_value_types": {
+        "Invoice": {
+          "int": 515252,
+          "str": 10209
+        },
+        "StockCode": {
+          "int": 445349,
+          "str": 80112
+        },
+        "Description": {
+          "str": 522530,
+          "NoneType": 2928,
+          "int": 3
+        },
+        "Quantity": {
+          "int": 525461
+        },
+        "InvoiceDate": {
+          "datetime": 525461
+        },
+        "Price": {
+          "float": 519941,
+          "int": 5520
+        },
+        "Customer ID": {
+          "int": 417534,
+          "NoneType": 107927
+        },
+        "Country": {
+          "str": 525461
+        }
+      },
+      "original_excel_cell_types": {
+        "Invoice": {
+          "n": 515252,
+          "s": 10209
+        },
+        "StockCode": {
+          "n": 445349,
+          "s": 80112
+        },
+        "Description": {
+          "s": 522530,
+          "n": 2931
+        },
+        "Quantity": {
+          "n": 525461
+        },
+        "InvoiceDate": {
+          "d": 525461
+        },
+        "Price": {
+          "n": 525461
+        },
+        "Customer ID": {
+          "n": 525461
+        },
+        "Country": {
+          "s": 525461
+        }
+      },
+      "profile_dtypes": {
+        "Invoice": "string",
+        "StockCode": "string",
+        "Description": "object",
+        "Quantity": "int64",
+        "InvoiceDate": "datetime64[us]",
+        "Price": "object",
+        "Customer ID": "string",
+        "Country": "str",
+        "source_sheet": "str",
+        "source_row": "int64",
+        "line_amount": "object"
+      },
+      "rows": 525461,
+      "date_min": "2009-12-01T07:45:00",
+      "date_max": "2010-12-09T20:01:00",
+      "missing_by_field": {
+        "Invoice": 0,
+        "StockCode": 0,
+        "Description": 2928,
+        "Quantity": 0,
+        "InvoiceDate": 0,
+        "Price": 0,
+        "Customer ID": 107927,
+        "Country": 0
+      },
+      "blank_or_whitespace_text_by_field": {
+        "Invoice": 0,
+        "StockCode": 0,
+        "Description": 0,
+        "Customer ID": 0,
+        "Country": 0
+      },
+      "distinct_invoices_all_records": 28816,
+      "distinct_identified_customers_all_records": 4383,
+      "identified_row_coverage": 0.7946051181724239,
+      "candidate_positive_non_cancellation_all_code_rows": 511565,
+      "candidate_positive_non_cancellation_all_code_amount_gbp": "10305892.024",
+      "candidate_identified_positive_all_code_amount_gbp": "8832003.274",
+      "candidate_identified_positive_all_code_amount_coverage": "0.8569858148554574842690977528",
+      "raw_signed_line_amount_gbp": "9539484.634",
+      "raw_positive_line_amount_gbp": "10306265.594",
+      "raw_negative_line_amount_gbp": "-766780.96",
+      "cancellation_prefix_rows": 10206,
+      "cancellation_prefix_distinct_invoices": 4592,
+      "negative_quantity_rows": 12326,
+      "zero_quantity_rows": 0,
+      "zero_price_rows": 3687,
+      "negative_price_rows": 3,
+      "negative_quantity_without_c_prefix_rows": 2121,
+      "c_prefix_positive_quantity_rows": 1,
+      "other_invoice_format_rows": 3,
+      "price_decimal_places_max": 3,
+      "quantity_min": -9600,
+      "quantity_max": 19152,
+      "price_min": "-53594.36",
+      "price_max": "25111.09",
+      "full_row_duplicate_participating_rows": 13283,
+      "full_row_duplicate_extra_rows_beyond_first": 6865,
+      "full_row_duplicate_extra_raw_signed_amount_gbp": "33709.07",
+      "invoice_stockcode_repeated_key_participating_rows": 25399,
+      "invoice_stockcode_extra_rows_beyond_first": 13335,
+      "invoices_multiple_nonmissing_customer_ids": 0,
+      "invoices_mixed_missing_and_present_customer_id": 0,
+      "invoices_multiple_timestamps": 41,
+      "invoices_multiple_countries": 0,
+      "invoice_conflict_examples": {
+        "customer_ids": [],
+        "timestamps": [
+          "492807",
+          "494166",
+          "499967",
+          "500353",
+          "500827",
+          "501618",
+          "501871",
+          "503609",
+          "505791",
+          "509851"
+        ],
+        "countries": []
+      },
+      "duplicate_examples": [
+        {
+          "Invoice": "489517",
+          "StockCode": "21913",
+          "Description": "VINTAGE SEASIDE JIGSAW PUZZLES",
+          "Quantity": 1,
+          "InvoiceDate": "2009-12-01T11:34:00.000",
+          "Price": "3.75",
+          "Customer ID": "16329",
+          "Country": "United Kingdom",
+          "source_sheet": "Year 2009-2010",
+          "source_row": 364
+        },
+        {
+          "Invoice": "489517",
+          "StockCode": "21912",
+          "Description": "VINTAGE SNAKES & LADDERS",
+          "Quantity": 1,
+          "InvoiceDate": "2009-12-01T11:34:00.000",
+          "Price": "3.75",
+          "Customer ID": "16329",
+          "Country": "United Kingdom",
+          "source_sheet": "Year 2009-2010",
+          "source_row": 365
+        },
+        {
+          "Invoice": "489517",
+          "StockCode": "21821",
+          "Description": "GLITTER STAR GARLAND WITH BELLS ",
+          "Quantity": 1,
+          "InvoiceDate": "2009-12-01T11:34:00.000",
+          "Price": "3.75",
+          "Customer ID": "16329",
+          "Country": "United Kingdom",
+          "source_sheet": "Year 2009-2010",
+          "source_row": 367
+        },
+        {
+          "Invoice": "489517",
+          "StockCode": "22319",
+          "Description": "HAIRCLIPS FORTIES FABRIC ASSORTED",
+          "Quantity": 12,
+          "InvoiceDate": "2009-12-01T11:34:00.000",
+          "Price": "0.65",
+          "Customer ID": "16329",
+          "Country": "United Kingdom",
+          "source_sheet": "Year 2009-2010",
+          "source_row": 369
+        },
+        {
+          "Invoice": "489517",
+          "StockCode": "22130",
+          "Description": "PARTY CONE CHRISTMAS DECORATION ",
+          "Quantity": 6,
+          "InvoiceDate": "2009-12-01T11:34:00.000",
+          "Price": "0.85",
+          "Customer ID": "16329",
+          "Country": "United Kingdom",
+          "source_sheet": "Year 2009-2010",
+          "source_row": 370
+        },
+        {
+          "Invoice": "489517",
+          "StockCode": "21912",
+          "Description": "VINTAGE SNAKES & LADDERS",
+          "Quantity": 1,
+          "InvoiceDate": "2009-12-01T11:34:00.000",
+          "Price": "3.75",
+          "Customer ID": "16329",
+          "Country": "United Kingdom",
+          "source_sheet": "Year 2009-2010",
+          "source_row": 373
+        },
+        {
+          "Invoice": "489517",
+          "StockCode": "21491",
+          "Description": "SET OF THREE VINTAGE GIFT WRAPS",
+          "Quantity": 1,
+          "InvoiceDate": "2009-12-01T11:34:00.000",
+          "Price": "1.95",
+          "Customer ID": "16329",
+          "Country": "United Kingdom",
+          "source_sheet": "Year 2009-2010",
+          "source_row": 381
+        },
+        {
+          "Invoice": "489517",
+          "StockCode": "22130",
+          "Description": "PARTY CONE CHRISTMAS DECORATION ",
+          "Quantity": 6,
+          "InvoiceDate": "2009-12-01T11:34:00.000",
+          "Price": "0.85",
+          "Customer ID": "16329",
+          "Country": "United Kingdom",
+          "source_sheet": "Year 2009-2010",
+          "source_row": 385
+        }
+      ]
+    },
+    {
+      "sheet": "Year 2010-2011",
+      "headers": [
+        "Invoice",
+        "StockCode",
+        "Description",
+        "Quantity",
+        "InvoiceDate",
+        "Price",
+        "Customer ID",
+        "Country"
+      ],
+      "worksheet_max_row_including_header": 541911,
+      "worksheet_max_column": 8,
+      "blank_rows": [],
+      "original_python_value_types": {
+        "Invoice": {
+          "int": 532619,
+          "str": 9291
+        },
+        "StockCode": {
+          "str": 54874,
+          "int": 487036
+        },
+        "Description": {
+          "str": 540455,
+          "NoneType": 1454,
+          "int": 1
+        },
+        "Quantity": {
+          "int": 541910
+        },
+        "InvoiceDate": {
+          "datetime": 541910
+        },
+        "Price": {
+          "float": 537406,
+          "int": 4504
+        },
+        "Customer ID": {
+          "int": 406830,
+          "NoneType": 135080
+        },
+        "Country": {
+          "str": 541910
+        }
+      },
+      "original_excel_cell_types": {
+        "Invoice": {
+          "n": 532619,
+          "s": 9291
+        },
+        "StockCode": {
+          "s": 54874,
+          "n": 487036
+        },
+        "Description": {
+          "s": 540455,
+          "n": 1455
+        },
+        "Quantity": {
+          "n": 541910
+        },
+        "InvoiceDate": {
+          "d": 541910
+        },
+        "Price": {
+          "n": 541910
+        },
+        "Customer ID": {
+          "n": 541910
+        },
+        "Country": {
+          "s": 541910
+        }
+      },
+      "profile_dtypes": {
+        "Invoice": "string",
+        "StockCode": "string",
+        "Description": "object",
+        "Quantity": "int64",
+        "InvoiceDate": "datetime64[us]",
+        "Price": "object",
+        "Customer ID": "string",
+        "Country": "str",
+        "source_sheet": "str",
+        "source_row": "int64",
+        "line_amount": "object"
+      },
+      "rows": 541910,
+      "date_min": "2010-12-01T08:26:00",
+      "date_max": "2011-12-09T12:50:00",
+      "missing_by_field": {
+        "Invoice": 0,
+        "StockCode": 0,
+        "Description": 1454,
+        "Quantity": 0,
+        "InvoiceDate": 0,
+        "Price": 0,
+        "Customer ID": 135080,
+        "Country": 0
+      },
+      "blank_or_whitespace_text_by_field": {
+        "Invoice": 0,
+        "StockCode": 0,
+        "Description": 0,
+        "Customer ID": 0,
+        "Country": 0
+      },
+      "distinct_invoices_all_records": 25900,
+      "distinct_identified_customers_all_records": 4372,
+      "identified_row_coverage": 0.7507335166356037,
+      "candidate_positive_non_cancellation_all_code_rows": 530105,
+      "candidate_positive_non_cancellation_all_code_amount_gbp": "10666702.544",
+      "candidate_identified_positive_all_code_amount_gbp": "8911425.904",
+      "candidate_identified_positive_all_code_amount_coverage": "0.8354433684862300965650702034",
+      "raw_signed_line_amount_gbp": "9747765.934",
+      "raw_positive_line_amount_gbp": "10666702.544",
+      "raw_negative_line_amount_gbp": "-918936.61",
+      "cancellation_prefix_rows": 9288,
+      "cancellation_prefix_distinct_invoices": 3836,
+      "negative_quantity_rows": 10624,
+      "zero_quantity_rows": 0,
+      "zero_price_rows": 2515,
+      "negative_price_rows": 2,
+      "negative_quantity_without_c_prefix_rows": 1336,
+      "c_prefix_positive_quantity_rows": 0,
+      "other_invoice_format_rows": 3,
+      "price_decimal_places_max": 3,
+      "quantity_min": -80995,
+      "quantity_max": 80995,
+      "price_min": "-11062.06",
+      "price_max": "38970.0",
+      "full_row_duplicate_participating_rows": 10147,
+      "full_row_duplicate_extra_rows_beyond_first": 5268,
+      "full_row_duplicate_extra_raw_signed_amount_gbp": "21740.98",
+      "invoice_stockcode_repeated_key_participating_rows": 20378,
+      "invoice_stockcode_extra_rows_beyond_first": 10684,
+      "invoices_multiple_nonmissing_customer_ids": 0,
+      "invoices_mixed_missing_and_present_customer_id": 0,
+      "invoices_multiple_timestamps": 43,
+      "invoices_multiple_countries": 0,
+      "invoice_conflict_examples": {
+        "customer_ids": [],
+        "timestamps": [
+          "536591",
+          "540185",
+          "541596",
+          "541631",
+          "541809",
+          "541816",
+          "541849",
+          "542217",
+          "542806",
+          "543171"
+        ],
+        "countries": []
+      },
+      "duplicate_examples": [
+        {
+          "Invoice": "536409",
+          "StockCode": "22111",
+          "Description": "SCOTTIE DOG HOT WATER BOTTLE",
+          "Quantity": 1,
+          "InvoiceDate": "2010-12-01T11:45:00.000",
+          "Price": "4.95",
+          "Customer ID": "17908",
+          "Country": "United Kingdom",
+          "source_sheet": "Year 2010-2011",
+          "source_row": 487
+        },
+        {
+          "Invoice": "536409",
+          "StockCode": "22866",
+          "Description": "HAND WARMER SCOTTY DOG DESIGN",
+          "Quantity": 1,
+          "InvoiceDate": "2010-12-01T11:45:00.000",
+          "Price": "2.1",
+          "Customer ID": "17908",
+          "Country": "United Kingdom",
+          "source_sheet": "Year 2010-2011",
+          "source_row": 491
+        },
+        {
+          "Invoice": "536409",
+          "StockCode": "21866",
+          "Description": "UNION JACK FLAG LUGGAGE TAG",
+          "Quantity": 1,
+          "InvoiceDate": "2010-12-01T11:45:00.000",
+          "Price": "1.25",
+          "Customer ID": "17908",
+          "Country": "United Kingdom",
+          "source_sheet": "Year 2010-2011",
+          "source_row": 496
+        },
+        {
+          "Invoice": "536409",
+          "StockCode": "21866",
+          "Description": "UNION JACK FLAG LUGGAGE TAG",
+          "Quantity": 1,
+          "InvoiceDate": "2010-12-01T11:45:00.000",
+          "Price": "1.25",
+          "Customer ID": "17908",
+          "Country": "United Kingdom",
+          "source_sheet": "Year 2010-2011",
+          "source_row": 519
+        },
+        {
+          "Invoice": "536409",
+          "StockCode": "22900",
+          "Description": " SET 2 TEA TOWELS I LOVE LONDON ",
+          "Quantity": 1,
+          "InvoiceDate": "2010-12-01T11:45:00.000",
+          "Price": "2.95",
+          "Customer ID": "17908",
+          "Country": "United Kingdom",
+          "source_sheet": "Year 2010-2011",
+          "source_row": 523
+        },
+        {
+          "Invoice": "536409",
+          "StockCode": "22866",
+          "Description": "HAND WARMER SCOTTY DOG DESIGN",
+          "Quantity": 1,
+          "InvoiceDate": "2010-12-01T11:45:00.000",
+          "Price": "2.1",
+          "Customer ID": "17908",
+          "Country": "United Kingdom",
+          "source_sheet": "Year 2010-2011",
+          "source_row": 529
+        },
+        {
+          "Invoice": "536409",
+          "StockCode": "22900",
+          "Description": " SET 2 TEA TOWELS I LOVE LONDON ",
+          "Quantity": 1,
+          "InvoiceDate": "2010-12-01T11:45:00.000",
+          "Price": "2.95",
+          "Customer ID": "17908",
+          "Country": "United Kingdom",
+          "source_sheet": "Year 2010-2011",
+          "source_row": 539
+        },
+        {
+          "Invoice": "536409",
+          "StockCode": "22111",
+          "Description": "SCOTTIE DOG HOT WATER BOTTLE",
+          "Quantity": 1,
+          "InvoiceDate": "2010-12-01T11:45:00.000",
+          "Price": "4.95",
+          "Customer ID": "17908",
+          "Country": "United Kingdom",
+          "source_sheet": "Year 2010-2011",
+          "source_row": 541
+        }
+      ]
+    }
+  ],
+  "combined_before_cleaning": {
+    "rows": 1067371,
+    "date_min": "2009-12-01T07:45:00",
+    "date_max": "2011-12-09T12:50:00",
+    "missing_by_field": {
+      "Invoice": 0,
+      "StockCode": 0,
+      "Description": 4382,
+      "Quantity": 0,
+      "InvoiceDate": 0,
+      "Price": 0,
+      "Customer ID": 243007,
+      "Country": 0
+    },
+    "blank_or_whitespace_text_by_field": {
+      "Invoice": 0,
+      "StockCode": 0,
+      "Description": 0,
+      "Customer ID": 0,
+      "Country": 0
+    },
+    "distinct_invoices_all_records": 53628,
+    "distinct_identified_customers_all_records": 5942,
+    "identified_row_coverage": 0.7723312700082726,
+    "candidate_positive_non_cancellation_all_code_rows": 1041670,
+    "candidate_positive_non_cancellation_all_code_amount_gbp": "20972594.568",
+    "candidate_identified_positive_all_code_amount_gbp": "17743429.178",
+    "candidate_identified_positive_all_code_amount_coverage": "0.8460292845727794264582285707",
+    "raw_signed_line_amount_gbp": "19287250.568",
+    "raw_positive_line_amount_gbp": "20972968.138",
+    "raw_negative_line_amount_gbp": "-1685717.57",
+    "cancellation_prefix_rows": 19494,
+    "cancellation_prefix_distinct_invoices": 8292,
+    "negative_quantity_rows": 22950,
+    "zero_quantity_rows": 0,
+    "zero_price_rows": 6202,
+    "negative_price_rows": 5,
+    "negative_quantity_without_c_prefix_rows": 3457,
+    "c_prefix_positive_quantity_rows": 1,
+    "other_invoice_format_rows": 6,
+    "price_decimal_places_max": 3,
+    "quantity_min": -80995,
+    "quantity_max": 80995,
+    "price_min": "-53594.36",
+    "price_max": "38970.0",
+    "full_row_duplicate_participating_rows": 67242,
+    "full_row_duplicate_extra_rows_beyond_first": 34335,
+    "full_row_duplicate_extra_raw_signed_amount_gbp": "431716.87",
+    "invoice_stockcode_repeated_key_participating_rows": 88585,
+    "invoice_stockcode_extra_rows_beyond_first": 45947,
+    "invoices_multiple_nonmissing_customer_ids": 0,
+    "invoices_mixed_missing_and_present_customer_id": 0,
+    "invoices_multiple_timestamps": 83,
+    "invoices_multiple_countries": 0,
+    "invoice_conflict_examples": {
+      "customer_ids": [],
+      "timestamps": [
+        "492807",
+        "494166",
+        "499967",
+        "500353",
+        "500827",
+        "501618",
+        "501871",
+        "503609",
+        "505791",
+        "509851"
+      ],
+      "countries": []
+    },
+    "duplicate_examples": [
+      {
+        "Invoice": "489517",
+        "StockCode": "21913",
+        "Description": "VINTAGE SEASIDE JIGSAW PUZZLES",
+        "Quantity": 1,
+        "InvoiceDate": "2009-12-01T11:34:00.000",
+        "Price": "3.75",
+        "Customer ID": "16329",
+        "Country": "United Kingdom",
+        "source_sheet": "Year 2009-2010",
+        "source_row": 364
+      },
+      {
+        "Invoice": "489517",
+        "StockCode": "21912",
+        "Description": "VINTAGE SNAKES & LADDERS",
+        "Quantity": 1,
+        "InvoiceDate": "2009-12-01T11:34:00.000",
+        "Price": "3.75",
+        "Customer ID": "16329",
+        "Country": "United Kingdom",
+        "source_sheet": "Year 2009-2010",
+        "source_row": 365
+      },
+      {
+        "Invoice": "489517",
+        "StockCode": "21821",
+        "Description": "GLITTER STAR GARLAND WITH BELLS ",
+        "Quantity": 1,
+        "InvoiceDate": "2009-12-01T11:34:00.000",
+        "Price": "3.75",
+        "Customer ID": "16329",
+        "Country": "United Kingdom",
+        "source_sheet": "Year 2009-2010",
+        "source_row": 367
+      },
+      {
+        "Invoice": "489517",
+        "StockCode": "22319",
+        "Description": "HAIRCLIPS FORTIES FABRIC ASSORTED",
+        "Quantity": 12,
+        "InvoiceDate": "2009-12-01T11:34:00.000",
+        "Price": "0.65",
+        "Customer ID": "16329",
+        "Country": "United Kingdom",
+        "source_sheet": "Year 2009-2010",
+        "source_row": 369
+      },
+      {
+        "Invoice": "489517",
+        "StockCode": "22130",
+        "Description": "PARTY CONE CHRISTMAS DECORATION ",
+        "Quantity": 6,
+        "InvoiceDate": "2009-12-01T11:34:00.000",
+        "Price": "0.85",
+        "Customer ID": "16329",
+        "Country": "United Kingdom",
+        "source_sheet": "Year 2009-2010",
+        "source_row": 370
+      },
+      {
+        "Invoice": "489517",
+        "StockCode": "21912",
+        "Description": "VINTAGE SNAKES & LADDERS",
+        "Quantity": 1,
+        "InvoiceDate": "2009-12-01T11:34:00.000",
+        "Price": "3.75",
+        "Customer ID": "16329",
+        "Country": "United Kingdom",
+        "source_sheet": "Year 2009-2010",
+        "source_row": 373
+      },
+      {
+        "Invoice": "489517",
+        "StockCode": "21491",
+        "Description": "SET OF THREE VINTAGE GIFT WRAPS",
+        "Quantity": 1,
+        "InvoiceDate": "2009-12-01T11:34:00.000",
+        "Price": "1.95",
+        "Customer ID": "16329",
+        "Country": "United Kingdom",
+        "source_sheet": "Year 2009-2010",
+        "source_row": 381
+      },
+      {
+        "Invoice": "489517",
+        "StockCode": "22130",
+        "Description": "PARTY CONE CHRISTMAS DECORATION ",
+        "Quantity": 6,
+        "InvoiceDate": "2009-12-01T11:34:00.000",
+        "Price": "0.85",
+        "Customer ID": "16329",
+        "Country": "United Kingdom",
+        "source_sheet": "Year 2009-2010",
+        "source_row": 385
+      }
+    ]
+  },
+  "cross_sheet_overlap": [
+    {
+      "left_sheet": "Year 2009-2010",
+      "right_sheet": "Year 2010-2011",
+      "timestamp_overlap_start": "2010-12-01T08:26:00",
+      "timestamp_overlap_end": "2010-12-09T20:01:00",
+      "left_rows_in_overlap": 22523,
+      "right_rows_in_overlap": 22523,
+      "distinct_all_field_matches": 22202,
+      "matched_row_copies_min_multiplicity": 22523,
+      "matched_raw_signed_amount_gbp": "377488.45",
+      "same_multiplicity_match_patterns": 22202,
+      "left_rows_with_matching_pattern": 22523,
+      "right_rows_with_matching_pattern": 22523,
+      "examples": [
+        {
+          "Invoice": "536365",
+          "StockCode": "21730",
+          "Description": "GLASS STAR FROSTED T-LIGHT HOLDER",
+          "Quantity": 6,
+          "InvoiceDate": "2010-12-01T08:26:00.000",
+          "Price": "4.25",
+          "Customer ID": "17850",
+          "Country": "United Kingdom",
+          "left_count": 1,
+          "right_count": 1,
+          "matched_copies": 1
+        },
+        {
+          "Invoice": "536365",
+          "StockCode": "22752",
+          "Description": "SET 7 BABUSHKA NESTING BOXES",
+          "Quantity": 2,
+          "InvoiceDate": "2010-12-01T08:26:00.000",
+          "Price": "7.65",
+          "Customer ID": "17850",
+          "Country": "United Kingdom",
+          "left_count": 1,
+          "right_count": 1,
+          "matched_copies": 1
+        },
+        {
+          "Invoice": "536365",
+          "StockCode": "71053",
+          "Description": "WHITE METAL LANTERN",
+          "Quantity": 6,
+          "InvoiceDate": "2010-12-01T08:26:00.000",
+          "Price": "3.39",
+          "Customer ID": "17850",
+          "Country": "United Kingdom",
+          "left_count": 1,
+          "right_count": 1,
+          "matched_copies": 1
+        },
+        {
+          "Invoice": "536365",
+          "StockCode": "84029E",
+          "Description": "RED WOOLLY HOTTIE WHITE HEART.",
+          "Quantity": 6,
+          "InvoiceDate": "2010-12-01T08:26:00.000",
+          "Price": "3.39",
+          "Customer ID": "17850",
+          "Country": "United Kingdom",
+          "left_count": 1,
+          "right_count": 1,
+          "matched_copies": 1
+        },
+        {
+          "Invoice": "536365",
+          "StockCode": "84029G",
+          "Description": "KNITTED UNION FLAG HOT WATER BOTTLE",
+          "Quantity": 6,
+          "InvoiceDate": "2010-12-01T08:26:00.000",
+          "Price": "3.39",
+          "Customer ID": "17850",
+          "Country": "United Kingdom",
+          "left_count": 1,
+          "right_count": 1,
+          "matched_copies": 1
+        }
+      ]
+    }
+  ],
+  "independent_xml_controls": [
+    {
+      "sheet": "Year 2009-2010",
+      "rows": 525461,
+      "raw_signed_line_amount_gbp": "9539484.634",
+      "raw_positive_line_amount_gbp": "10306265.594",
+      "raw_negative_line_amount_gbp": "-766780.96",
+      "literal_xml_token_signed_amount_gbp": "9539484.633999999949298633",
+      "canonical_minus_literal_signed_amount_gbp": "5.0701367E-11",
+      "price_serialization_tail_rows": 61709,
+      "price_serialization_examples": [
+        {
+          "source_row": 10,
+          "xml_price_token": "2.5499999999999998",
+          "canonical_numeric_price": "2.55"
+        },
+        {
+          "source_row": 13,
+          "xml_price_token": "2.5499999999999998",
+          "canonical_numeric_price": "2.55"
+        },
+        {
+          "source_row": 25,
+          "xml_price_token": "4.6500000000000004",
+          "canonical_numeric_price": "4.65"
+        },
+        {
+          "source_row": 37,
+          "xml_price_token": "9.9499999999999993",
+          "canonical_numeric_price": "9.95"
+        },
+        {
+          "source_row": 40,
+          "xml_price_token": "8.9499999999999993",
+          "canonical_numeric_price": "8.95"
+        }
+      ]
+    },
+    {
+      "sheet": "Year 2010-2011",
+      "rows": 541910,
+      "raw_signed_line_amount_gbp": "9747765.934",
+      "raw_positive_line_amount_gbp": "10666702.544",
+      "raw_negative_line_amount_gbp": "-918936.61",
+      "literal_xml_token_signed_amount_gbp": "9747765.933999999975832209",
+      "canonical_minus_literal_signed_amount_gbp": "2.4167791E-11",
+      "price_serialization_tail_rows": 51170,
+      "price_serialization_examples": [
+        {
+          "source_row": 2,
+          "xml_price_token": "2.5499999999999998",
+          "canonical_numeric_price": "2.55"
+        },
+        {
+          "source_row": 22,
+          "xml_price_token": "9.9499999999999993",
+          "canonical_numeric_price": "9.95"
+        },
+        {
+          "source_row": 48,
+          "xml_price_token": "2.5499999999999998",
+          "canonical_numeric_price": "2.55"
+        },
+        {
+          "source_row": 51,
+          "xml_price_token": "2.5499999999999998",
+          "canonical_numeric_price": "2.55"
+        },
+        {
+          "source_row": 62,
+          "xml_price_token": "2.5499999999999998",
+          "canonical_numeric_price": "2.55"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "checksum_unchanged": true,
+    "unique_sheet_row_provenance": true,
+    "sheet_counts_sum_to_combined": true,
+    "sheet_signed_totals_sum_to_combined": true,
+    "xml_counts_and_decimal_positive_negative_signed_totals_match": true
+  }
+}

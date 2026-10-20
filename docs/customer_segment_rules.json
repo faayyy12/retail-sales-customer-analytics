@@ -1,0 +1,183 @@
+{
+  "version": "snapshot_segments_v1",
+  "frozen_at": "2026-10-16T09:12:20.705403+08:00",
+  "status": "Frozen before first evaluation of these segment outcomes; do not revise to improve outcome separation.",
+  "outcome_exposure": "Outcomes were already inspected elsewhere in this project; not an untouched holdout or a preregistered causal experiment. Historical-only distributions and business reasoning set these rules; no new group-outcome evaluation preceded this freeze.",
+  "feature_cutoff_date": "2011-08-31",
+  "outcome_start_date": "2011-09-01",
+  "outcome_end_date": "2011-11-29",
+  "feature_profile_path": "reports/customer_segment_feature_profile.json",
+  "feature_profile_sha256": "77ffe3fd5c06958cada2f1b6c3a44afd726c72a5f52b9e86309686003daf97d0",
+  "assignment_order": [
+    "If observed tenure <= recent_tenure_days: recently_first_observed",
+    "Else if recency <= recency_days AND purchase_day_count >= core_purchase_days AND historical gross >= core_gross_gbp: recent_established_higher_spend_repeat",
+    "Else if recency <= recency_days: other_recent_established",
+    "Else if purchase_day_count >= 2: less_recent_multi_day",
+    "Else: less_recent_single_day"
+  ],
+  "segments": [
+    {
+      "id": "recently_first_observed",
+      "label": "Recently first observed",
+      "order": 1
+    },
+    {
+      "id": "recent_established_higher_spend_repeat",
+      "label": "Recent established higher-spend repeat purchasers",
+      "order": 2
+    },
+    {
+      "id": "other_recent_established",
+      "label": "Other recent established purchasers",
+      "order": 3
+    },
+    {
+      "id": "less_recent_multi_day",
+      "label": "Less recent established multi-day purchasers",
+      "order": 4
+    },
+    {
+      "id": "less_recent_single_day",
+      "label": "Less recent established single-day purchasers",
+      "order": 5
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "base",
+      "thresholds": {
+        "recency_days": 90,
+        "recent_tenure_days": 90,
+        "core_purchase_days": 3,
+        "core_gross_gbp": "2000"
+      },
+      "change": "Frozen primary specification"
+    },
+    {
+      "id": "recency_75",
+      "thresholds": {
+        "recency_days": 75,
+        "recent_tenure_days": 90,
+        "core_purchase_days": 3,
+        "core_gross_gbp": "2000"
+      },
+      "change": "Recency only: 90 -> 75 days"
+    },
+    {
+      "id": "recency_105",
+      "thresholds": {
+        "recency_days": 105,
+        "recent_tenure_days": 90,
+        "core_purchase_days": 3,
+        "core_gross_gbp": "2000"
+      },
+      "change": "Recency only: 90 -> 105 days"
+    },
+    {
+      "id": "tenure_75",
+      "thresholds": {
+        "recency_days": 90,
+        "recent_tenure_days": 75,
+        "core_purchase_days": 3,
+        "core_gross_gbp": "2000"
+      },
+      "change": "Recently first-observed protection only: 90 -> 75 days"
+    },
+    {
+      "id": "tenure_105",
+      "thresholds": {
+        "recency_days": 90,
+        "recent_tenure_days": 105,
+        "core_purchase_days": 3,
+        "core_gross_gbp": "2000"
+      },
+      "change": "Recently first-observed protection only: 90 -> 105 days"
+    },
+    {
+      "id": "gross_1500",
+      "thresholds": {
+        "recency_days": 90,
+        "recent_tenure_days": 90,
+        "core_purchase_days": 3,
+        "core_gross_gbp": "1500"
+      },
+      "change": "Higher-spend cutoff only: GBP 2000 -> 1500"
+    },
+    {
+      "id": "gross_2500",
+      "thresholds": {
+        "recency_days": 90,
+        "recent_tenure_days": 90,
+        "core_purchase_days": 3,
+        "core_gross_gbp": "2500"
+      },
+      "change": "Higher-spend cutoff only: GBP 2000 -> 2500"
+    }
+  ],
+  "small_group_threshold": 30,
+  "historical_feature_columns_used": [
+    "observed_tenure_days",
+    "recency_days",
+    "purchase_day_count",
+    "gross_merchandise_purchase_amount_gbp"
+  ],
+  "threshold_rationale": {
+    "recency_90": "A round three-month operational review window, not estimated typical cadence or optimized response separation. Historical recency median is 160 days; 1930 customers have recency <=90.",
+    "tenure_90": "Protect one initial quarter of observed history before applying established labels; 312 customers have observed tenure <=90. First observed does not establish acquisition.",
+    "purchase_days_3": "At least three distinct historical purchase days, near the full-population median of 3; multiple same-day invoices do not inflate this frequency. Kept fixed across the small sensitivity exercise.",
+    "gross_2000": "A readable historical gross threshold near the full-population 75th percentile GBP 2050.035, and below the recent established median GBP 2434.38. It signals recorded purchase value, not profit or worth as a person.",
+    "single_day_vs_multi_day": "Separate one observed purchase day from evidence of purchasing on later days. Limited observed behavior is not a churn classification."
+  },
+  "sensitivity_plan": "Six one-at-a-time variants, fixed before group evaluation: recency +/-15 days, protection tenure +/-15 days, historical gross +/-GBP500. Five groups remain visible per scenario. Base stays primary regardless of outcomes; no winner selection or hypothesis/significance claims.",
+  "historical_only_group_sizes": {
+    "base": {
+      "recently_first_observed": 312,
+      "recent_established_higher_spend_repeat": 916,
+      "other_recent_established": 702,
+      "less_recent_multi_day": 1876,
+      "less_recent_single_day": 1418
+    },
+    "recency_75": {
+      "recently_first_observed": 312,
+      "recent_established_higher_spend_repeat": 845,
+      "other_recent_established": 566,
+      "less_recent_multi_day": 2083,
+      "less_recent_single_day": 1418
+    },
+    "recency_105": {
+      "recently_first_observed": 312,
+      "recent_established_higher_spend_repeat": 974,
+      "other_recent_established": 829,
+      "less_recent_multi_day": 1720,
+      "less_recent_single_day": 1389
+    },
+    "tenure_75": {
+      "recently_first_observed": 253,
+      "recent_established_higher_spend_repeat": 917,
+      "other_recent_established": 760,
+      "less_recent_multi_day": 1876,
+      "less_recent_single_day": 1418
+    },
+    "tenure_105": {
+      "recently_first_observed": 358,
+      "recent_established_higher_spend_repeat": 913,
+      "other_recent_established": 688,
+      "less_recent_multi_day": 1876,
+      "less_recent_single_day": 1389
+    },
+    "gross_1500": {
+      "recently_first_observed": 312,
+      "recent_established_higher_spend_repeat": 1056,
+      "other_recent_established": 562,
+      "less_recent_multi_day": 1876,
+      "less_recent_single_day": 1418
+    },
+    "gross_2500": {
+      "recently_first_observed": 312,
+      "recent_established_higher_spend_repeat": 792,
+      "other_recent_established": 826,
+      "less_recent_multi_day": 1876,
+      "less_recent_single_day": 1418
+    }
+  }
+}

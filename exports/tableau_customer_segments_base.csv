@@ -1,0 +1,6 @@
+scenario_id,segment_id,customer_count,customer_share,subsequent_purchasing_customers,subsequent_purchase_rate,subsequent_invoice_count,subsequent_gross_purchases_gbp,subsequent_gross_purchases_per_customer_gbp,subsequent_gross_purchases_share,small_customer_denominator
+base,recently_first_observed,312,0.059724349,159,0.509615385,342,147496.15,472.744070513,0.05463844,false
+base,recent_established_higher_spend_repeat,916,0.175344564,760,0.829694323,2757,1814808.7,1981.23220524,0.672277313,false
+base,other_recent_established,702,0.134379786,392,0.558404558,713,193677.4,275.893732194,0.071745811,false
+base,less_recent_multi_day,1876,0.359111792,690,0.367803838,1082,426999.68,227.611769723,0.158177662,false
+base,less_recent_single_day,1418,0.27143951,235,0.165726375,313,116512.26,82.166614951,0.043160775,false

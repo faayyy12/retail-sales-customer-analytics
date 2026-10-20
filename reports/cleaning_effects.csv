@@ -1,0 +1,12 @@
+stage,rows,invoices,identified_customers,missing_customer_id_rows,signed_amount_gbp,gross_merchandise_amount,recorded_merchandise_credit_amount,identified_gross_merchandise_amount
+raw,1067371,53628,5942,243007,19287250.568,,,
+canonical_all_classified_rows,1044848,53628,5942,235287,18909762.118,19700954.44,719656.34,17124940.98
+qualifying_purchase,1015071,39516,5852,226882,19700954.44,19700954.44,0,17124940.98
+main_history_all_classified_rows,1019322,52613,5914,227423,18476076.108,19085461.17,545529.58,16611710.55
+main_history_qualifying_purchase,990040,38700,5824,219093,19085461.17,19085461.17,0,16611710.55
+non_merchandise_or_unresolved,5775,5432,1128,2114,87140.158,0,0,0
+recorded_merchandise_credit,17973,7405,2444,332,-719656.34,0,719656.34,0
+zero_value,6024,5379,51,5954,0.0,0,0,0
+main_history_anonymous_purchase,219093,2882,0,219093,2473750.62,2473750.62,0,0
+negative_price_adjustment,5,5,0,5,-158676.14,0,0,0
+excluded_overlap,22523,1088,622,7720,377488.45,,,

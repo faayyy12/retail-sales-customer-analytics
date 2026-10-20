@@ -1,0 +1,3 @@
+year,period_start,period_end,gross_merchandise_sales_gbp,recorded_merchandise_credits_gbp,net_recorded_merchandise_sales_gbp,purchase_invoice_count,average_purchase_invoice_value_gbp,identified_purchasing_customers,identified_purchase_invoice_count,anonymous_purchase_invoice_count,identified_gross_merchandise_sales_gbp,anonymous_gross_merchandise_sales_gbp,identified_gross_sales_share
+2010,2010-01-01,2010-11-30,8628418.41,221370.88,8407047.53,18077,477.314731980,4127,16695,1382,7682808.11,945610.30,0.890407459
+2011,2011-01-01,2011-11-30,8878008.02,286989.56,8591018.46,17407,510.025163440,4168,16232,1175,7680345.50,1197662.52,0.865097833

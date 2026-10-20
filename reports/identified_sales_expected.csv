@@ -1,0 +1,3 @@
+period,identified_purchasing_customers,identified_purchase_invoice_count,purchases_per_identified_customer,average_identified_purchase_invoice_value_gbp,identified_gross_merchandise_sales_gbp,anonymous_purchase_invoice_count,anonymous_gross_merchandise_sales_gbp,total_purchase_invoice_count,total_gross_merchandise_sales_gbp,identified_gross_sales_share
+2010_jan_nov,4127,16695,4.045311364,460.186170111,7682808.11,1382,945610.30,18077,8628418.41,0.890407459
+2011_jan_nov,4168,16232,3.894433781,473.160762691,7680345.50,1175,1197662.52,17407,8878008.02,0.865097833

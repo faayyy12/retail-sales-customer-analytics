@@ -1,0 +1,13 @@
+[
+  {"name": "invoice_no", "type": "STRING", "mode": "REQUIRED"},
+  {"name": "stock_code_raw", "type": "STRING", "mode": "REQUIRED"},
+  {"name": "description_raw", "type": "STRING", "mode": "NULLABLE"},
+  {"name": "quantity", "type": "INTEGER", "mode": "REQUIRED"},
+  {"name": "invoice_datetime", "type": "DATETIME", "mode": "REQUIRED"},
+  {"name": "unit_price", "type": "NUMERIC", "mode": "REQUIRED"},
+  {"name": "customer_id", "type": "STRING", "mode": "NULLABLE"},
+  {"name": "country", "type": "STRING", "mode": "REQUIRED"},
+  {"name": "source_sheet", "type": "STRING", "mode": "REQUIRED"},
+  {"name": "source_row", "type": "INTEGER", "mode": "REQUIRED"},
+  {"name": "description_source_type", "type": "STRING", "mode": "REQUIRED"}
+]

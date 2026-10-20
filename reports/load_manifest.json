@@ -1,0 +1,209 @@
+{
+  "generated_at": "2026-10-14T11:08:13.240335+08:00",
+  "source_sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+  "null_marker": "__NULL__",
+  "raw_columns": [
+    "invoice_no",
+    "stock_code_raw",
+    "description_raw",
+    "quantity",
+    "invoice_datetime",
+    "unit_price",
+    "customer_id",
+    "country",
+    "source_sheet",
+    "source_row",
+    "description_source_type"
+  ],
+  "raw_files": [
+    {
+      "path": "data/processed/raw_Year_2009-2010_01.csv",
+      "bytes": 23144655,
+      "sha256": "4d89540be49589def23c575721c83b9ecbc43e9ae5999178a40e14a80d308035",
+      "rows": 200000,
+      "invoices": 11456,
+      "identified_customers": 2661,
+      "missing_customer_id_rows": 45524,
+      "signed_amount_gbp": "3646646.821",
+      "positive_amount_gbp": "3909474.041",
+      "negative_amount_gbp": "-262827.22"
+    },
+    {
+      "path": "data/processed/raw_Year_2009-2010_02.csv",
+      "bytes": 23198356,
+      "sha256": "a179dfeeb35aaf690c86af50280cec42fba703ead9f4b3a43a747e42875deb9d",
+      "rows": 200000,
+      "invoices": 11367,
+      "identified_customers": 2948,
+      "missing_customer_id_rows": 34295,
+      "signed_amount_gbp": "3721389.951",
+      "positive_amount_gbp": "4053082.531",
+      "negative_amount_gbp": "-331692.58"
+    },
+    {
+      "path": "data/processed/raw_Year_2009-2010_03.csv",
+      "bytes": 14604763,
+      "sha256": "4d2fc0390e06d058e2f806a4259cb0d1659274221ff69b588deba5f4e8abd1e0",
+      "rows": 125461,
+      "invoices": 5994,
+      "identified_customers": 2213,
+      "missing_customer_id_rows": 28108,
+      "signed_amount_gbp": "2171447.862",
+      "positive_amount_gbp": "2343709.022",
+      "negative_amount_gbp": "-172261.16"
+    },
+    {
+      "path": "data/processed/raw_Year_2010-2011_01.csv",
+      "bytes": 23137091,
+      "sha256": "7fd81e846d427fc0a4b382f726502b35fce921f5f4c4bfa25193d49963703066",
+      "rows": 200000,
+      "invoices": 10204,
+      "identified_customers": 2707,
+      "missing_customer_id_rows": 58014,
+      "signed_amount_gbp": "3520976.811",
+      "positive_amount_gbp": "3872612.361",
+      "negative_amount_gbp": "-351635.55"
+    },
+    {
+      "path": "data/processed/raw_Year_2010-2011_02.csv",
+      "bytes": 23179792,
+      "sha256": "b61a79a72dfbc96467afec1bc2cfe0f6cc4cde57fae3ba7e497f6c2ef7e5fbe5",
+      "rows": 200000,
+      "invoices": 9867,
+      "identified_customers": 2841,
+      "missing_customer_id_rows": 44606,
+      "signed_amount_gbp": "3779272.453",
+      "positive_amount_gbp": "4050007.423",
+      "negative_amount_gbp": "-270734.97"
+    },
+    {
+      "path": "data/processed/raw_Year_2010-2011_03.csv",
+      "bytes": 16526711,
+      "sha256": "e8e061c68557a7f4128748dc86b5daa3a90818a6fe529ea3dfd1ad40a02b3735",
+      "rows": 141910,
+      "invoices": 5831,
+      "identified_customers": 2319,
+      "missing_customer_id_rows": 32460,
+      "signed_amount_gbp": "2447516.67",
+      "positive_amount_gbp": "2744082.76",
+      "negative_amount_gbp": "-296566.09"
+    }
+  ],
+  "raw": {
+    "rows": 1067371,
+    "invoices": 53628,
+    "identified_customers": 5942,
+    "missing_customer_id_rows": 243007,
+    "signed_amount_gbp": "19287250.568",
+    "positive_amount_gbp": "20972968.138",
+    "negative_amount_gbp": "-1685717.57"
+  },
+  "overlap_excluded": {
+    "rows": 22523,
+    "invoices": 1088,
+    "identified_customers": 622,
+    "missing_customer_id_rows": 7720,
+    "signed_amount_gbp": "377488.45",
+    "positive_amount_gbp": "438852.65",
+    "negative_amount_gbp": "-61364.20"
+  },
+  "canonical": {
+    "rows": 1044848,
+    "invoices": 53628,
+    "identified_customers": 5942,
+    "missing_customer_id_rows": 235287,
+    "signed_amount_gbp": "18909762.118",
+    "positive_amount_gbp": "20534115.488",
+    "negative_amount_gbp": "-1624353.37"
+  },
+  "canonical_exact_repeat_excess_rows_retained": 11812,
+  "canonical_invoices_multiple_calendar_days": 0,
+  "overlap_verification": {
+    "left_sheet": "Year 2009-2010",
+    "right_sheet": "Year 2010-2011",
+    "timestamp_overlap_start": "2010-12-01T08:26:00",
+    "timestamp_overlap_end": "2010-12-09T20:01:00",
+    "left_rows_in_overlap": 22523,
+    "right_rows_in_overlap": 22523,
+    "distinct_all_field_matches": 22202,
+    "matched_row_copies_min_multiplicity": 22523,
+    "matched_raw_signed_amount_gbp": "377488.45",
+    "same_multiplicity_match_patterns": 22202,
+    "left_rows_with_matching_pattern": 22523,
+    "right_rows_with_matching_pattern": 22523,
+    "examples": [
+      {
+        "Invoice": "536365",
+        "StockCode": "21730",
+        "Description": "GLASS STAR FROSTED T-LIGHT HOLDER",
+        "Quantity": 6,
+        "InvoiceDate": "2010-12-01T08:26:00.000",
+        "Price": "4.25",
+        "Customer ID": "17850",
+        "Country": "United Kingdom",
+        "left_count": 1,
+        "right_count": 1,
+        "matched_copies": 1
+      },
+      {
+        "Invoice": "536365",
+        "StockCode": "22752",
+        "Description": "SET 7 BABUSHKA NESTING BOXES",
+        "Quantity": 2,
+        "InvoiceDate": "2010-12-01T08:26:00.000",
+        "Price": "7.65",
+        "Customer ID": "17850",
+        "Country": "United Kingdom",
+        "left_count": 1,
+        "right_count": 1,
+        "matched_copies": 1
+      },
+      {
+        "Invoice": "536365",
+        "StockCode": "71053",
+        "Description": "WHITE METAL LANTERN",
+        "Quantity": 6,
+        "InvoiceDate": "2010-12-01T08:26:00.000",
+        "Price": "3.39",
+        "Customer ID": "17850",
+        "Country": "United Kingdom",
+        "left_count": 1,
+        "right_count": 1,
+        "matched_copies": 1
+      },
+      {
+        "Invoice": "536365",
+        "StockCode": "84029E",
+        "Description": "RED WOOLLY HOTTIE WHITE HEART.",
+        "Quantity": 6,
+        "InvoiceDate": "2010-12-01T08:26:00.000",
+        "Price": "3.39",
+        "Customer ID": "17850",
+        "Country": "United Kingdom",
+        "left_count": 1,
+        "right_count": 1,
+        "matched_copies": 1
+      },
+      {
+        "Invoice": "536365",
+        "StockCode": "84029G",
+        "Description": "KNITTED UNION FLAG HOT WATER BOTTLE",
+        "Quantity": 6,
+        "InvoiceDate": "2010-12-01T08:26:00.000",
+        "Price": "3.39",
+        "Customer ID": "17850",
+        "Country": "United Kingdom",
+        "left_count": 1,
+        "right_count": 1,
+        "matched_copies": 1
+      }
+    ]
+  },
+  "verification": {
+    "all_raw_csv_values_round_trip": true,
+    "source_unchanged": true,
+    "unique_source_provenance": true,
+    "source_profile_reconciled": true,
+    "overlap_multiplicities_match": true
+  }
+}

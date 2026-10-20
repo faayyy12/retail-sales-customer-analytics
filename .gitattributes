@@ -1,0 +1,13 @@
+# Preserve published dataset bytes so manifest SHA-256 values survive fresh clones.
+*.xlsx -text
+*.twbx -text
+*.csv -text -whitespace
+*.md text eol=lf
+*.py text eol=lf
+*.sql text eol=lf
+*.json text eol=lf
+# Preserve the byte-level source profile referenced by analytical checksums.
+reports/source_profile.json -text -whitespace
+*.txt text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf

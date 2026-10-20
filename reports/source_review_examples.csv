@@ -1,0 +1,70 @@
+Invoice,StockCode,Description,Quantity,InvoiceDate,Price,Customer ID,Country,source_sheet,source_row,line_amount,example_kind
+A506401,B,Adjust bad debt,1,2010-04-29 13:36:00,-53594.36,,United Kingdom,Year 2009-2010,179405,-53594.36,negative_price
+A516228,B,Adjust bad debt,1,2010-07-19 11:24:00,-44031.79,,United Kingdom,Year 2009-2010,276276,-44031.79,negative_price
+A528059,B,Adjust bad debt,1,2010-10-20 12:04:00,-38925.87,,United Kingdom,Year 2009-2010,403474,-38925.87,negative_price
+A563186,B,Adjust bad debt,1,2011-08-12 14:51:00,-11062.06,,United Kingdom,Year 2010-2011,299985,-11062.06,negative_price
+A563187,B,Adjust bad debt,1,2011-08-12 14:52:00,-11062.06,,United Kingdom,Year 2010-2011,299986,-11062.06,negative_price
+489464,21733,85123a mixed,-96,2009-12-01 10:52:00,0.0,,United Kingdom,Year 2009-2010,265,-0.0,zero_price
+489463,71477,short,-240,2009-12-01 10:52:00,0.0,,United Kingdom,Year 2009-2010,285,-0.0,zero_price
+489467,85123A,21733 mixed,-192,2009-12-01 10:53:00,0.0,,United Kingdom,Year 2009-2010,286,-0.0,zero_price
+489521,21646,,-50,2009-12-01 11:44:00,0.0,,United Kingdom,Year 2009-2010,472,-0.0,zero_price
+489655,20683,,-44,2009-12-01 17:26:00,0.0,,United Kingdom,Year 2009-2010,3116,-0.0,zero_price
+489659,21350,,230,2009-12-01 17:39:00,0.0,,United Kingdom,Year 2009-2010,3163,0.0,zero_price
+489464,21733,85123a mixed,-96,2009-12-01 10:52:00,0.0,,United Kingdom,Year 2009-2010,265,-0.0,negative_quantity_without_c_prefix
+489463,71477,short,-240,2009-12-01 10:52:00,0.0,,United Kingdom,Year 2009-2010,285,-0.0,negative_quantity_without_c_prefix
+489467,85123A,21733 mixed,-192,2009-12-01 10:53:00,0.0,,United Kingdom,Year 2009-2010,286,-0.0,negative_quantity_without_c_prefix
+489521,21646,,-50,2009-12-01 11:44:00,0.0,,United Kingdom,Year 2009-2010,472,-0.0,negative_quantity_without_c_prefix
+489655,20683,,-44,2009-12-01 17:26:00,0.0,,United Kingdom,Year 2009-2010,3116,-0.0,negative_quantity_without_c_prefix
+489660,35956,lost,-1043,2009-12-01 17:43:00,0.0,,United Kingdom,Year 2009-2010,3164,-0.0,negative_quantity_without_c_prefix
+A506401,B,Adjust bad debt,1,2010-04-29 13:36:00,-53594.36,,United Kingdom,Year 2009-2010,179405,-53594.36,other_invoice_format
+A516228,B,Adjust bad debt,1,2010-07-19 11:24:00,-44031.79,,United Kingdom,Year 2009-2010,276276,-44031.79,other_invoice_format
+A528059,B,Adjust bad debt,1,2010-10-20 12:04:00,-38925.87,,United Kingdom,Year 2009-2010,403474,-38925.87,other_invoice_format
+A563185,B,Adjust bad debt,1,2011-08-12 14:50:00,11062.06,,United Kingdom,Year 2010-2011,299984,11062.06,other_invoice_format
+A563186,B,Adjust bad debt,1,2011-08-12 14:51:00,-11062.06,,United Kingdom,Year 2010-2011,299985,-11062.06,other_invoice_format
+A563187,B,Adjust bad debt,1,2011-08-12 14:52:00,-11062.06,,United Kingdom,Year 2010-2011,299986,-11062.06,other_invoice_format
+489517,21913,VINTAGE SEASIDE JIGSAW PUZZLES,1,2009-12-01 11:34:00,3.75,16329,United Kingdom,Year 2009-2010,364,3.75,duplicate_full_row
+489517,21912,VINTAGE SNAKES & LADDERS,1,2009-12-01 11:34:00,3.75,16329,United Kingdom,Year 2009-2010,365,3.75,duplicate_full_row
+489517,21821,GLITTER STAR GARLAND WITH BELLS ,1,2009-12-01 11:34:00,3.75,16329,United Kingdom,Year 2009-2010,367,3.75,duplicate_full_row
+489517,22319,HAIRCLIPS FORTIES FABRIC ASSORTED,12,2009-12-01 11:34:00,0.65,16329,United Kingdom,Year 2009-2010,369,7.80,duplicate_full_row
+489517,22130,PARTY CONE CHRISTMAS DECORATION ,6,2009-12-01 11:34:00,0.85,16329,United Kingdom,Year 2009-2010,370,5.10,duplicate_full_row
+489517,21912,VINTAGE SNAKES & LADDERS,1,2009-12-01 11:34:00,3.75,16329,United Kingdom,Year 2009-2010,373,3.75,duplicate_full_row
+C581484,23843,"PAPER CRAFT , LITTLE BIRDIE",-80995,2011-12-09 09:27:00,2.08,16446,United Kingdom,Year 2010-2011,540424,-168469.60,largest_absolute_line_amount
+581483,23843,"PAPER CRAFT , LITTLE BIRDIE",80995,2011-12-09 09:15:00,2.08,16446,United Kingdom,Year 2010-2011,540423,168469.60,largest_absolute_line_amount
+C541433,23166,MEDIUM CERAMIC TOP STORAGE JAR,-74215,2011-01-18 10:17:00,1.04,12346,United Kingdom,Year 2010-2011,61626,-77183.60,largest_absolute_line_amount
+541431,23166,MEDIUM CERAMIC TOP STORAGE JAR,74215,2011-01-18 10:01:00,1.04,12346,United Kingdom,Year 2010-2011,61621,77183.60,largest_absolute_line_amount
+A506401,B,Adjust bad debt,1,2010-04-29 13:36:00,-53594.36,,United Kingdom,Year 2009-2010,179405,-53594.36,largest_absolute_line_amount
+A516228,B,Adjust bad debt,1,2010-07-19 11:24:00,-44031.79,,United Kingdom,Year 2009-2010,276276,-44031.79,largest_absolute_line_amount
+556444,22502,PICNIC BASKET WICKER 60 PIECES,60,2011-06-10 15:28:00,649.5,15098,United Kingdom,Year 2010-2011,222673,38970.0,largest_absolute_line_amount
+C556445,M,Manual,-1,2011-06-10 15:31:00,38970.0,15098,United Kingdom,Year 2010-2011,222683,-38970.0,largest_absolute_line_amount
+A528059,B,Adjust bad debt,1,2010-10-20 12:04:00,-38925.87,,United Kingdom,Year 2009-2010,403474,-38925.87,largest_absolute_line_amount
+512771,M,Manual,1,2010-06-17 16:53:00,25111.09,,United Kingdom,Year 2009-2010,241829,25111.09,largest_absolute_line_amount
+492807,85131A,BEADED PEARL HEART WHITE ON STICK,1,2009-12-20 12:28:00,1.25,17211,United Kingdom,Year 2009-2010,41632,1.25,invoice_multiple_timestamps
+492807,85129A,"WHITE PEARL BEADED HEART, SMALL",2,2009-12-20 12:28:00,1.25,17211,United Kingdom,Year 2009-2010,41633,2.50,invoice_multiple_timestamps
+492807,85129D,BEADED CRYSTAL HEART PINK SMALL,4,2009-12-20 12:28:00,1.25,17211,United Kingdom,Year 2009-2010,41634,5.00,invoice_multiple_timestamps
+492807,85129B,BEADED CRYSTAL HEART GREEN SMALL,3,2009-12-20 12:28:00,1.25,17211,United Kingdom,Year 2009-2010,41635,3.75,invoice_multiple_timestamps
+492807,85129A,"WHITE PEARL BEADED HEART, SMALL",3,2009-12-20 12:28:00,1.25,17211,United Kingdom,Year 2009-2010,41636,3.75,invoice_multiple_timestamps
+492807,21645,ASSORTED TUTTI FRUTTI ROUND BOX,12,2009-12-20 12:28:00,1.65,17211,United Kingdom,Year 2009-2010,41637,19.80,invoice_multiple_timestamps
+492807,84029G,KNITTED UNION FLAG HOT WATER BOTTLE,1,2009-12-20 12:28:00,3.75,17211,United Kingdom,Year 2009-2010,41638,3.75,invoice_multiple_timestamps
+492807,21813,GARLAND WITH STARS AND BELLS,6,2009-12-20 12:28:00,4.95,17211,United Kingdom,Year 2009-2010,41639,29.70,invoice_multiple_timestamps
+492807,22139,RETRO SPOT TEA SET CERAMIC 11 PC ,4,2009-12-20 12:28:00,4.95,17211,United Kingdom,Year 2009-2010,41640,19.80,invoice_multiple_timestamps
+492807,37340,MULTICOLOUR SPRING FLOWER MUG,6,2009-12-20 12:28:00,0.85,17211,United Kingdom,Year 2009-2010,41641,5.10,invoice_multiple_timestamps
+492807,21644,ASSORTED TUTTI FRUTTI HEART BOX,12,2009-12-20 12:28:00,1.25,17211,United Kingdom,Year 2009-2010,41642,15.00,invoice_multiple_timestamps
+492807,22111,SCOTTIE DOG HOT WATER BOTTLE,2,2009-12-20 12:28:00,4.95,17211,United Kingdom,Year 2009-2010,41643,9.90,invoice_multiple_timestamps
+492807,84029E,RED WOOLLY HOTTIE WHITE HEART.,2,2009-12-20 12:28:00,3.75,17211,United Kingdom,Year 2009-2010,41644,7.50,invoice_multiple_timestamps
+492807,21485,RED SPOT HEART HOT WATER BOTTLE,2,2009-12-20 12:28:00,4.95,17211,United Kingdom,Year 2009-2010,41645,9.90,invoice_multiple_timestamps
+492807,22030,SWALLOWS GREETING CARD,24,2009-12-20 12:28:00,0.42,17211,United Kingdom,Year 2009-2010,41646,10.08,invoice_multiple_timestamps
+492807,84975,HEART SHAPED MIRROR,6,2009-12-20 12:28:00,1.69,17211,United Kingdom,Year 2009-2010,41647,10.14,invoice_multiple_timestamps
+492807,22294,HEART FILIGREE DOVE  SMALL,6,2009-12-20 12:28:00,1.25,17211,United Kingdom,Year 2009-2010,41648,7.50,invoice_multiple_timestamps
+492807,22296,HEART IVORY TRELLIS LARGE,6,2009-12-20 12:28:00,1.65,17211,United Kingdom,Year 2009-2010,41649,9.90,invoice_multiple_timestamps
+492807,21497,FANCY FONTS BIRTHDAY WRAP,25,2009-12-20 12:28:00,0.42,17211,United Kingdom,Year 2009-2010,41650,10.50,invoice_multiple_timestamps
+492807,84508C,BLUE CIRCLES DESIGN TEDDY,2,2009-12-20 12:28:00,2.55,17211,United Kingdom,Year 2009-2010,41651,5.10,invoice_multiple_timestamps
+492807,84507C,BLUE CIRCLES DESIGN MONKEY DOLL,3,2009-12-20 12:28:00,2.55,17211,United Kingdom,Year 2009-2010,41652,7.65,invoice_multiple_timestamps
+492807,84507B,STRIPES DESIGN MONKEY DOLL,3,2009-12-20 12:28:00,2.55,17211,United Kingdom,Year 2009-2010,41653,7.65,invoice_multiple_timestamps
+492807,84327A,PINK JUMPER LARRY THE LAMB,2,2009-12-20 12:28:00,2.1,17211,United Kingdom,Year 2009-2010,41654,4.2,invoice_multiple_timestamps
+492807,84508B,STRIPES DESIGN TEDDY,2,2009-12-20 12:28:00,2.55,17211,United Kingdom,Year 2009-2010,41655,5.10,invoice_multiple_timestamps
+492807,22112,CHOCOLATE HOT WATER BOTTLE,3,2009-12-20 12:28:00,4.95,17211,United Kingdom,Year 2009-2010,41656,14.85,invoice_multiple_timestamps
+492807,84950,ASSORTED COLOUR T-LIGHT HOLDER,12,2009-12-20 12:29:00,0.85,17211,United Kingdom,Year 2009-2010,41657,10.20,invoice_multiple_timestamps
+492807,21812,GARLAND WITH HEARTS AND BELLS,6,2009-12-20 12:29:00,4.95,17211,United Kingdom,Year 2009-2010,41658,29.70,invoice_multiple_timestamps
+492807,21813,GARLAND WITH STARS AND BELLS,6,2009-12-20 12:29:00,4.95,17211,United Kingdom,Year 2009-2010,41659,29.70,invoice_multiple_timestamps
+492807,85123A,WHITE HANGING HEART T-LIGHT HOLDER,8,2009-12-20 12:29:00,2.95,17211,United Kingdom,Year 2009-2010,41660,23.60,invoice_multiple_timestamps
+492807,79323W, WHITE CHERRY LIGHTS,3,2009-12-20 12:29:00,6.75,17211,United Kingdom,Year 2009-2010,41661,20.25,invoice_multiple_timestamps

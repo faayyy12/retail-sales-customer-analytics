@@ -1,0 +1,805 @@
+{
+  "sales": {
+    "periods": {
+      "2010": {
+        "gross_merchandise_sales_gbp": "8628418.41",
+        "recorded_merchandise_credits_gbp": "221370.88",
+        "net_recorded_merchandise_sales_gbp": "8407047.53",
+        "purchase_invoice_count": "18077",
+        "identified_purchase_invoice_count": "16695",
+        "anonymous_purchase_invoice_count": "1382",
+        "identified_gross_merchandise_sales_gbp": "7682808.11",
+        "anonymous_gross_merchandise_sales_gbp": "945610.30",
+        "average_purchase_invoice_value_gbp": "477.314731980",
+        "identified_gross_sales_share_percent": "89.040745881",
+        "recorded_credits_as_percent_of_gross": "2.565602055"
+      },
+      "2011": {
+        "gross_merchandise_sales_gbp": "8878008.02",
+        "recorded_merchandise_credits_gbp": "286989.56",
+        "net_recorded_merchandise_sales_gbp": "8591018.46",
+        "purchase_invoice_count": "17407",
+        "identified_purchase_invoice_count": "16232",
+        "anonymous_purchase_invoice_count": "1175",
+        "identified_gross_merchandise_sales_gbp": "7680345.50",
+        "anonymous_gross_merchandise_sales_gbp": "1197662.52",
+        "average_purchase_invoice_value_gbp": "510.025163440",
+        "identified_gross_sales_share_percent": "86.509783306",
+        "recorded_credits_as_percent_of_gross": "3.232589556"
+      }
+    },
+    "changes_2011_vs_2010": {
+      "gross_merchandise_sales_gbp": {
+        "absolute": "249589.61",
+        "percent": "2.892646116"
+      },
+      "recorded_merchandise_credits_gbp": {
+        "absolute": "65618.68",
+        "percent": "29.641965556"
+      },
+      "net_recorded_merchandise_sales_gbp": {
+        "absolute": "183970.93",
+        "percent": "2.188294158"
+      },
+      "purchase_invoice_count": {
+        "absolute": "-670",
+        "percent": "-3.706367207"
+      },
+      "identified_purchase_invoice_count": {
+        "absolute": "-463",
+        "percent": "-2.773285415"
+      },
+      "anonymous_purchase_invoice_count": {
+        "absolute": "-207",
+        "percent": "-14.978292330"
+      },
+      "identified_gross_merchandise_sales_gbp": {
+        "absolute": "-2462.61",
+        "percent": "-0.032053514"
+      },
+      "anonymous_gross_merchandise_sales_gbp": {
+        "absolute": "252052.22",
+        "percent": "26.654978272"
+      },
+      "average_purchase_invoice_value_gbp": {
+        "absolute": "32.710431460",
+        "absolute_unit": "GBP",
+        "percent": "6.853011078"
+      },
+      "identified_gross_sales_share_percent": {
+        "absolute": "-2.530962575",
+        "absolute_unit": "percentage points",
+        "percent": "-2.842476834"
+      },
+      "recorded_credits_as_percent_of_gross": {
+        "absolute": "0.666987501",
+        "absolute_unit": "percentage points",
+        "percent": "25.997309283"
+      }
+    },
+    "monthly_gross_sales_changes": [
+      {
+        "month_number": 1,
+        "gross_sales_change_gbp": "58082.38",
+        "gross_sales_change_percent": "9.461970084"
+      },
+      {
+        "month_number": 2,
+        "gross_sales_change_gbp": "-30858.48",
+        "gross_sales_change_percent": "-5.717236527"
+      },
+      {
+        "month_number": 3,
+        "gross_sales_change_gbp": "-73076.24",
+        "gross_sales_change_percent": "-9.560775046"
+      },
+      {
+        "month_number": 4,
+        "gross_sales_change_gbp": "-132775.70",
+        "gross_sales_change_percent": "-20.458700208"
+      },
+      {
+        "month_number": 5,
+        "gross_sales_change_gbp": "95547.02",
+        "gross_sales_change_percent": "14.798683841"
+      },
+      {
+        "month_number": 6,
+        "gross_sales_change_gbp": "39435.85",
+        "gross_sales_change_percent": "5.639203003"
+      },
+      {
+        "month_number": 7,
+        "gross_sales_change_gbp": "54467.42",
+        "gross_sales_change_percent": "8.578938136"
+      },
+      {
+        "month_number": 8,
+        "gross_sales_change_gbp": "49452.78",
+        "gross_sales_change_percent": "7.314842963"
+      },
+      {
+        "month_number": 9,
+        "gross_sales_change_gbp": "158597.02",
+        "gross_sales_change_percent": "18.190269528"
+      },
+      {
+        "month_number": 10,
+        "gross_sales_change_gbp": "8652.15",
+        "gross_sales_change_percent": "0.787979122"
+      },
+      {
+        "month_number": 11,
+        "gross_sales_change_gbp": "22065.41",
+        "gross_sales_change_percent": "1.536930803"
+      }
+    ]
+  },
+  "repeat_purchasing": {
+    "population_totals": {
+      "total_customers": 5824,
+      "eligible_customers": 5227,
+      "ineligible_customers": 597,
+      "eligible_repeaters_30d": 974,
+      "eligible_repeaters_60d": 1791,
+      "eligible_repeaters_90d": 2305,
+      "eligible_nonrepeaters_90d": 2922
+    },
+    "pooled_rates": {
+      "day_30": {
+        "numerator": 974,
+        "denominator": 5227,
+        "exact_fraction": "974/5227",
+        "export_precision_fraction": "0.186340157"
+      },
+      "day_60": {
+        "numerator": 1791,
+        "denominator": 5227,
+        "exact_fraction": "1791/5227",
+        "export_precision_fraction": "0.342643964"
+      },
+      "day_90": {
+        "numerator": 2305,
+        "denominator": 5227,
+        "exact_fraction": "2305/5227",
+        "export_precision_fraction": "0.440979529"
+      }
+    },
+    "first_repeat_day_intervals": {
+      "days_1_30": 974,
+      "days_31_60": 817,
+      "days_61_90": 514
+    },
+    "pooled_conditional_median_days": "36",
+    "repeaters_first_repeating_after_day_30": {
+      "numerator": 1331,
+      "denominator": 2305,
+      "exact_fraction": "1331/2305",
+      "export_precision_fraction": "0.577440347"
+    },
+    "excluding_december_2009_sensitivity": {
+      "rate_90d": {
+        "numerator": 1741,
+        "denominator": 4276,
+        "exact_fraction": "1741/4276",
+        "export_precision_fraction": "0.407156221"
+      },
+      "definition": "Descriptive subset: remove the 951 first-month customers from the pooled calculation only. Original output and records remain unchanged. This is not an adjusted acquisition estimate; later first-observed customers are not known acquisitions either."
+    }
+  },
+  "customer_snapshot": {
+    "feature_cutoff_and_recency_reference_date": "2011-08-31",
+    "outcome_start_inclusive": "2011-09-01",
+    "outcome_end_inclusive": "2011-11-29",
+    "outcome_calendar_days": 90,
+    "summary_controls": {
+      "customer_rows": 5224,
+      "historical_purchase_invoices": 29534,
+      "historical_customer_purchase_days": 26520,
+      "historical_gross_purchase_amount_gbp": "13523021.07",
+      "customers_with_subsequent_purchase": 2236,
+      "customers_without_subsequent_purchase": 2988,
+      "subsequent_purchase_invoices": 5207,
+      "subsequent_gross_purchase_amount_gbp": "2699494.19",
+      "first_observed_date_min": "2009-12-01",
+      "last_observed_date_max": "2011-08-31"
+    },
+    "main_history_identified_invoice_partition": {
+      "historical_features": {
+        "invoices": 29534,
+        "gross_gbp": "13523021.07",
+        "distinct_customers": 5224
+      },
+      "november_30_excluded": {
+        "invoices": 98,
+        "gross_gbp": "40846.98",
+        "distinct_customers": 91
+      },
+      "outcome_future_only_customers": {
+        "invoices": 979,
+        "gross_gbp": "348348.31",
+        "distinct_customers": 597
+      },
+      "outcome_snapshot_customers": {
+        "invoices": 5207,
+        "gross_gbp": "2699494.19",
+        "distinct_customers": 2236
+      }
+    }
+  },
+  "segment_sensitivity": {
+    "frozen_rules_sha256": "d64154efd3be92ea6f3bf222675dfbca70f7b47dfbd2198c7af3211e8972810c",
+    "scenario_controls": {
+      "base": {
+        "customer_count": 5224,
+        "subsequent_purchasing_customers": 2236,
+        "subsequent_invoice_count": 5207,
+        "subsequent_gross_purchases_gbp": "2699494.19"
+      },
+      "gross_1500": {
+        "customer_count": 5224,
+        "subsequent_purchasing_customers": 2236,
+        "subsequent_invoice_count": 5207,
+        "subsequent_gross_purchases_gbp": "2699494.19"
+      },
+      "gross_2500": {
+        "customer_count": 5224,
+        "subsequent_purchasing_customers": 2236,
+        "subsequent_invoice_count": 5207,
+        "subsequent_gross_purchases_gbp": "2699494.19"
+      },
+      "recency_105": {
+        "customer_count": 5224,
+        "subsequent_purchasing_customers": 2236,
+        "subsequent_invoice_count": 5207,
+        "subsequent_gross_purchases_gbp": "2699494.19"
+      },
+      "recency_75": {
+        "customer_count": 5224,
+        "subsequent_purchasing_customers": 2236,
+        "subsequent_invoice_count": 5207,
+        "subsequent_gross_purchases_gbp": "2699494.19"
+      },
+      "tenure_105": {
+        "customer_count": 5224,
+        "subsequent_purchasing_customers": 2236,
+        "subsequent_invoice_count": 5207,
+        "subsequent_gross_purchases_gbp": "2699494.19"
+      },
+      "tenure_75": {
+        "customer_count": 5224,
+        "subsequent_purchasing_customers": 2236,
+        "subsequent_invoice_count": 5207,
+        "subsequent_gross_purchases_gbp": "2699494.19"
+      }
+    },
+    "historical_segment_controls": {
+      "base": {
+        "recently_first_observed": {
+          "customer_count": 312,
+          "purchase_invoices": 437,
+          "purchase_days": 421,
+          "gross_gbp": "192495.41"
+        },
+        "recent_established_higher_spend_repeat": {
+          "customer_count": 916,
+          "purchase_invoices": 15986,
+          "purchase_days": 13977,
+          "gross_gbp": "8939981.19"
+        },
+        "other_recent_established": {
+          "customer_count": 702,
+          "purchase_invoices": 3198,
+          "purchase_days": 3061,
+          "gross_gbp": "727990.81"
+        },
+        "less_recent_multi_day": {
+          "customer_count": 1876,
+          "purchase_invoices": 8431,
+          "purchase_days": 7643,
+          "gross_gbp": "3148255.36"
+        },
+        "less_recent_single_day": {
+          "customer_count": 1418,
+          "purchase_invoices": 1482,
+          "purchase_days": 1418,
+          "gross_gbp": "514298.30"
+        }
+      },
+      "recency_75": {
+        "recently_first_observed": {
+          "customer_count": 312,
+          "purchase_invoices": 437,
+          "purchase_days": 421,
+          "gross_gbp": "192495.41"
+        },
+        "recent_established_higher_spend_repeat": {
+          "customer_count": 845,
+          "purchase_invoices": 15288,
+          "purchase_days": 13328,
+          "gross_gbp": "8634361.59"
+        },
+        "other_recent_established": {
+          "customer_count": 566,
+          "purchase_invoices": 2607,
+          "purchase_days": 2496,
+          "gross_gbp": "596103.79"
+        },
+        "less_recent_multi_day": {
+          "customer_count": 2083,
+          "purchase_invoices": 9720,
+          "purchase_days": 8857,
+          "gross_gbp": "3585761.98"
+        },
+        "less_recent_single_day": {
+          "customer_count": 1418,
+          "purchase_invoices": 1482,
+          "purchase_days": 1418,
+          "gross_gbp": "514298.30"
+        }
+      },
+      "recency_105": {
+        "recently_first_observed": {
+          "customer_count": 312,
+          "purchase_invoices": 437,
+          "purchase_days": 421,
+          "gross_gbp": "192495.41"
+        },
+        "recent_established_higher_spend_repeat": {
+          "customer_count": 974,
+          "purchase_invoices": 16559,
+          "purchase_days": 14486,
+          "gross_gbp": "9190115.44"
+        },
+        "other_recent_established": {
+          "customer_count": 829,
+          "purchase_invoices": 3581,
+          "purchase_days": 3419,
+          "gross_gbp": "825574.14"
+        },
+        "less_recent_multi_day": {
+          "customer_count": 1720,
+          "purchase_invoices": 7506,
+          "purchase_days": 6805,
+          "gross_gbp": "2809203.93"
+        },
+        "less_recent_single_day": {
+          "customer_count": 1389,
+          "purchase_invoices": 1451,
+          "purchase_days": 1389,
+          "gross_gbp": "505632.15"
+        }
+      },
+      "tenure_75": {
+        "recently_first_observed": {
+          "customer_count": 253,
+          "purchase_invoices": 339,
+          "purchase_days": 327,
+          "gross_gbp": "125342.21"
+        },
+        "recent_established_higher_spend_repeat": {
+          "customer_count": 917,
+          "purchase_invoices": 15989,
+          "purchase_days": 13980,
+          "gross_gbp": "8942005.44"
+        },
+        "other_recent_established": {
+          "customer_count": 760,
+          "purchase_invoices": 3293,
+          "purchase_days": 3152,
+          "gross_gbp": "793119.76"
+        },
+        "less_recent_multi_day": {
+          "customer_count": 1876,
+          "purchase_invoices": 8431,
+          "purchase_days": 7643,
+          "gross_gbp": "3148255.36"
+        },
+        "less_recent_single_day": {
+          "customer_count": 1418,
+          "purchase_invoices": 1482,
+          "purchase_days": 1418,
+          "gross_gbp": "514298.30"
+        }
+      },
+      "tenure_105": {
+        "recently_first_observed": {
+          "customer_count": 358,
+          "purchase_invoices": 526,
+          "purchase_days": 505,
+          "gross_gbp": "218336.15"
+        },
+        "recent_established_higher_spend_repeat": {
+          "customer_count": 913,
+          "purchase_invoices": 15962,
+          "purchase_days": 13955,
+          "gross_gbp": "8931924.36"
+        },
+        "other_recent_established": {
+          "customer_count": 688,
+          "purchase_invoices": 3164,
+          "purchase_days": 3028,
+          "gross_gbp": "718873.05"
+        },
+        "less_recent_multi_day": {
+          "customer_count": 1876,
+          "purchase_invoices": 8431,
+          "purchase_days": 7643,
+          "gross_gbp": "3148255.36"
+        },
+        "less_recent_single_day": {
+          "customer_count": 1389,
+          "purchase_invoices": 1451,
+          "purchase_days": 1389,
+          "gross_gbp": "505632.15"
+        }
+      },
+      "gross_1500": {
+        "recently_first_observed": {
+          "customer_count": 312,
+          "purchase_invoices": 437,
+          "purchase_days": 421,
+          "gross_gbp": "192495.41"
+        },
+        "recent_established_higher_spend_repeat": {
+          "customer_count": 1056,
+          "purchase_invoices": 16888,
+          "purchase_days": 14836,
+          "gross_gbp": "9179890.79"
+        },
+        "other_recent_established": {
+          "customer_count": 562,
+          "purchase_invoices": 2296,
+          "purchase_days": 2202,
+          "gross_gbp": "488081.21"
+        },
+        "less_recent_multi_day": {
+          "customer_count": 1876,
+          "purchase_invoices": 8431,
+          "purchase_days": 7643,
+          "gross_gbp": "3148255.36"
+        },
+        "less_recent_single_day": {
+          "customer_count": 1418,
+          "purchase_invoices": 1482,
+          "purchase_days": 1418,
+          "gross_gbp": "514298.30"
+        }
+      },
+      "gross_2500": {
+        "recently_first_observed": {
+          "customer_count": 312,
+          "purchase_invoices": 437,
+          "purchase_days": 421,
+          "gross_gbp": "192495.41"
+        },
+        "recent_established_higher_spend_repeat": {
+          "customer_count": 792,
+          "purchase_invoices": 14989,
+          "purchase_days": 13027,
+          "gross_gbp": "8662830.42"
+        },
+        "other_recent_established": {
+          "customer_count": 826,
+          "purchase_invoices": 4195,
+          "purchase_days": 4011,
+          "gross_gbp": "1005141.58"
+        },
+        "less_recent_multi_day": {
+          "customer_count": 1876,
+          "purchase_invoices": 8431,
+          "purchase_days": 7643,
+          "gross_gbp": "3148255.36"
+        },
+        "less_recent_single_day": {
+          "customer_count": 1418,
+          "purchase_invoices": 1482,
+          "purchase_days": 1418,
+          "gross_gbp": "514298.30"
+        }
+      }
+    },
+    "sensitivity_membership_changes": {
+      "base": {
+        "moved_customers_from_base": 0,
+        "transitions": []
+      },
+      "recency_75": {
+        "moved_customers_from_base": 207,
+        "transitions": [
+          {
+            "from": "other_recent_established",
+            "to": "less_recent_multi_day",
+            "customers": 136
+          },
+          {
+            "from": "recent_established_higher_spend_repeat",
+            "to": "less_recent_multi_day",
+            "customers": 71
+          }
+        ]
+      },
+      "recency_105": {
+        "moved_customers_from_base": 185,
+        "transitions": [
+          {
+            "from": "less_recent_multi_day",
+            "to": "other_recent_established",
+            "customers": 98
+          },
+          {
+            "from": "less_recent_multi_day",
+            "to": "recent_established_higher_spend_repeat",
+            "customers": 58
+          },
+          {
+            "from": "less_recent_single_day",
+            "to": "other_recent_established",
+            "customers": 29
+          }
+        ]
+      },
+      "tenure_75": {
+        "moved_customers_from_base": 59,
+        "transitions": [
+          {
+            "from": "recently_first_observed",
+            "to": "other_recent_established",
+            "customers": 58
+          },
+          {
+            "from": "recently_first_observed",
+            "to": "recent_established_higher_spend_repeat",
+            "customers": 1
+          }
+        ]
+      },
+      "tenure_105": {
+        "moved_customers_from_base": 46,
+        "transitions": [
+          {
+            "from": "less_recent_single_day",
+            "to": "recently_first_observed",
+            "customers": 29
+          },
+          {
+            "from": "other_recent_established",
+            "to": "recently_first_observed",
+            "customers": 14
+          },
+          {
+            "from": "recent_established_higher_spend_repeat",
+            "to": "recently_first_observed",
+            "customers": 3
+          }
+        ]
+      },
+      "gross_1500": {
+        "moved_customers_from_base": 140,
+        "transitions": [
+          {
+            "from": "other_recent_established",
+            "to": "recent_established_higher_spend_repeat",
+            "customers": 140
+          }
+        ]
+      },
+      "gross_2500": {
+        "moved_customers_from_base": 124,
+        "transitions": [
+          {
+            "from": "recent_established_higher_spend_repeat",
+            "to": "other_recent_established",
+            "customers": 124
+          }
+        ]
+      }
+    }
+  },
+  "invoice_size_sensitivity": {
+    "source_checks": {
+      "raw_rows": 1067371,
+      "canonical_rows": 1044848,
+      "qualifying_lines": 1015071,
+      "all_history_purchase_invoices": 39516,
+      "invoice_date_customer_country_conflicts": 0,
+      "all_period_population_counts_and_gross_match_verified_baseline": true
+    },
+    "top_purchase_invoice_examples": [
+      {
+        "period": "2010_jan_nov",
+        "rank": 1,
+        "invoice_no": "533027",
+        "gross_gbp": "49844.99",
+        "has_customer_id": false,
+        "recorded_date": "2010-11-15"
+      },
+      {
+        "period": "2010_jan_nov",
+        "rank": 2,
+        "invoice_no": "531516",
+        "gross_gbp": "45332.97",
+        "has_customer_id": false,
+        "recorded_date": "2010-11-08"
+      },
+      {
+        "period": "2010_jan_nov",
+        "rank": 3,
+        "invoice_no": "493819",
+        "gross_gbp": "44051.60",
+        "has_customer_id": true,
+        "recorded_date": "2010-01-07"
+      },
+      {
+        "period": "2010_jan_nov",
+        "rank": 4,
+        "invoice_no": "524181",
+        "gross_gbp": "33167.80",
+        "has_customer_id": true,
+        "recorded_date": "2010-09-27"
+      },
+      {
+        "period": "2010_jan_nov",
+        "rank": 5,
+        "invoice_no": "526934",
+        "gross_gbp": "26007.08",
+        "has_customer_id": true,
+        "recorded_date": "2010-10-14"
+      },
+      {
+        "period": "2010_jan_nov",
+        "rank": 6,
+        "invoice_no": "515944",
+        "gross_gbp": "22863.36",
+        "has_customer_id": true,
+        "recorded_date": "2010-07-15"
+      },
+      {
+        "period": "2010_jan_nov",
+        "rank": 7,
+        "invoice_no": "503061",
+        "gross_gbp": "22853.77",
+        "has_customer_id": false,
+        "recorded_date": "2010-03-29"
+      },
+      {
+        "period": "2010_jan_nov",
+        "rank": 8,
+        "invoice_no": "517731",
+        "gross_gbp": "21984.00",
+        "has_customer_id": true,
+        "recorded_date": "2010-08-01"
+      },
+      {
+        "period": "2010_jan_nov",
+        "rank": 9,
+        "invoice_no": "495591",
+        "gross_gbp": "18570.88",
+        "has_customer_id": true,
+        "recorded_date": "2010-01-26"
+      },
+      {
+        "period": "2010_jan_nov",
+        "rank": 10,
+        "invoice_no": "494243",
+        "gross_gbp": "18532.3",
+        "has_customer_id": true,
+        "recorded_date": "2010-01-12"
+      },
+      {
+        "period": "2011_jan_nov",
+        "rank": 1,
+        "invoice_no": "541431",
+        "gross_gbp": "77183.60",
+        "has_customer_id": true,
+        "recorded_date": "2011-01-18"
+      },
+      {
+        "period": "2011_jan_nov",
+        "rank": 2,
+        "invoice_no": "574941",
+        "gross_gbp": "52940.94",
+        "has_customer_id": false,
+        "recorded_date": "2011-11-07"
+      },
+      {
+        "period": "2011_jan_nov",
+        "rank": 3,
+        "invoice_no": "576365",
+        "gross_gbp": "50653.91",
+        "has_customer_id": false,
+        "recorded_date": "2011-11-14"
+      },
+      {
+        "period": "2011_jan_nov",
+        "rank": 4,
+        "invoice_no": "556444",
+        "gross_gbp": "38970.0",
+        "has_customer_id": true,
+        "recorded_date": "2011-06-10"
+      },
+      {
+        "period": "2011_jan_nov",
+        "rank": 5,
+        "invoice_no": "567423",
+        "gross_gbp": "31698.16",
+        "has_customer_id": true,
+        "recorded_date": "2011-09-20"
+      },
+      {
+        "period": "2011_jan_nov",
+        "rank": 6,
+        "invoice_no": "556917",
+        "gross_gbp": "22775.93",
+        "has_customer_id": true,
+        "recorded_date": "2011-06-15"
+      },
+      {
+        "period": "2011_jan_nov",
+        "rank": 7,
+        "invoice_no": "572209",
+        "gross_gbp": "22206.00",
+        "has_customer_id": true,
+        "recorded_date": "2011-10-21"
+      },
+      {
+        "period": "2011_jan_nov",
+        "rank": 8,
+        "invoice_no": "567381",
+        "gross_gbp": "22104.80",
+        "has_customer_id": true,
+        "recorded_date": "2011-09-20"
+      },
+      {
+        "period": "2011_jan_nov",
+        "rank": 9,
+        "invoice_no": "563614",
+        "gross_gbp": "21880.44",
+        "has_customer_id": true,
+        "recorded_date": "2011-08-18"
+      },
+      {
+        "period": "2011_jan_nov",
+        "rank": 10,
+        "invoice_no": "550461",
+        "gross_gbp": "21535.90",
+        "has_customer_id": true,
+        "recorded_date": "2011-04-18"
+      }
+    ],
+    "remainder_aiv_changes": [
+      {
+        "population": "all",
+        "largest_n_separated_each_year": 1,
+        "remainder_aiv_change_percent": "6.539741242"
+      },
+      {
+        "population": "all",
+        "largest_n_separated_each_year": 10,
+        "remainder_aiv_change_percent": "6.231944147"
+      },
+      {
+        "population": "identified",
+        "largest_n_separated_each_year": 1,
+        "remainder_aiv_change_percent": "2.373299986"
+      },
+      {
+        "population": "identified",
+        "largest_n_separated_each_year": 10,
+        "remainder_aiv_change_percent": "1.998532780"
+      },
+      {
+        "population": "anonymous",
+        "largest_n_separated_each_year": 1,
+        "remainder_aiv_change_percent": "50.324999860"
+      },
+      {
+        "population": "anonymous",
+        "largest_n_separated_each_year": 10,
+        "remainder_aiv_change_percent": "54.920543684"
+      }
+    ],
+    "method": "Exact Decimal sums and medians; integer invoice counts; exact Fraction ratio changes; 9-decimal ratio serialization. Sort descending gross, ascending invoice code for ties.",
+    "limitations": "Top-1 and top-10 separations are diagnostic partitions, not data exclusions or replacement sales KPIs. Each year's population may contain different customers. Local details are not newly cloud-verified."
+  }
+}
